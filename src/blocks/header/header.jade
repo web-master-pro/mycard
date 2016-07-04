@@ -1,0 +1,13 @@
+mixin header()
+    header.header&attributes(attributes)
+        video.header__video(loop="true" muted="true" autoplay="true")
+        .header__video-cover
+        //- .header__video-overlay
+        .header__content
+            .header__headers
+                .header__logo(title="Horizon")
+                h1.header__title Создаем видеоролики, которые <br><strong>соответствуют задачам клиента</strong>
+                a(href="#form-popup" role="button").header__button.js-popup Хочу обсудить задачу
+            .header__volume.volume
+                span.volume__caption.volume__caption--on Включить музыку
+                span.volume__caption.volume__caption--off Выключить музыку

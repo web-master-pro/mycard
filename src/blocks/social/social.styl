@@ -1,0 +1,32 @@
+.social
+    width 275px
+    font-size 0
+    display flex
+    flex-flow row nowrap
+    justify-content space-between
+
+    &__icon
+        display inline-block
+        width 45px
+        height 45px
+        font-size 14px
+        text-decoration none
+        &:hover
+            text-decoration none
+        &--vk
+            opacity .6
+            retinaSprite($icon_social_vk_group)
+            &:hover
+                retinaSprite($icon_social_vk_hover_group)
+        &--fb
+            retinaSprite($icon_social_fb_group)
+            &:hover
+                retinaSprite($icon_social_fb_hover_group)
+        &--yt
+            retinaSprite($icon_social_yt_group)
+            &:hover
+                retinaSprite($icon_social_yt_hover_group)
+        &--ok
+            retinaSprite($icon_social_ok_group)
+            &:hover
+                retinaSprite($icon_social_ok_hover_group)

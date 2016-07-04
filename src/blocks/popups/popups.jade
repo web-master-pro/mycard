@@ -1,0 +1,44 @@
+mixin popup-thankyou()
+    .popup-thankyou.popup#popup-thankyou
+        h3.popup-thankyou__title Спасибо!
+        p.popup-thankyou__text Спасибо, что оставили заявку. Мы свяжемся с Вами в самое ближайшее время.
+        button.button.popup-thankyou__button.js-close-button Закрыть
+
+
+mixin form-popup()
+    form(action="assets/sendmail.php" method="POST").form-popup.popup#form-popup&attributes(attributes)
+        input(type="hidden" name="form" value="form-popup")
+        h1.form-popup__title Заявка на обратную связь
+        .form-popup__main
+            .form-popup__group
+                input(type="text" name="name" placeholder="ФИО").input.input--big.form-popup__input
+                input(type="tel" name="phone" placeholder="Телефон").input.input--big.form-popup__input.js-phone-field
+            .textarea.textarea--big
+                .textarea__placeholder Кратко опишите задачу
+                textarea(name="message").textarea__textarea
+            h3.form-popup__group-caption Выберите наиболее интересующую вас тематику
+            .form-popup__radio-group
+                .form-popup__radio-left
+                    .radio
+                        input(type="radio" name="theme" id="contact-form-radio-1" value="Видеоотчет" checked).radio__radio
+                        label(for="contact-form-radio-1").radio__label Видеоотчет
+                    .radio
+                        input(type="radio" name="theme" id="contact-form-radio-2" value="Информационный ролик").radio__radio
+                        label(for="contact-form-radio-2").radio__label Информационный ролик
+                    .radio
+                        input(type="radio" name="theme" id="contact-form-radio-3" value="Обзорный ролик").radio__radio
+                        label(for="contact-form-radio-3").radio__label Обзорный ролик
+                .form-popup__radio-right
+                    .radio
+                        input(type="radio" name="theme" id="contact-form-radio-4" value="Рекламный ролик").radio__radio
+                        label(for="contact-form-radio-4").radio__label Рекламный ролик
+                    .radio
+                        input(type="radio" name="theme" id="contact-form-radio-5" value="Презентационный ролик").radio__radio
+                        label(for="contact-form-radio-5").radio__label Презентационный ролик
+                    .radio
+                        input(type="radio" name="theme" id="contact-form-radio-6" value="Корпоративный имиджевый фильм").radio__radio
+                        label(for="contact-form-radio-6").radio__label Корпоративный имиджевый фильм
+
+            .form-popup__button-wrapper
+                button(type="submit").form-popup__button Оставить заявку
+        button.form-popup__close-btn.js-close-button закрыть <span>х</span>

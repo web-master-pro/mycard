@@ -1,0 +1,19 @@
+include ../form-main/form-main
+include ../social/social
+
+mixin main-inner()
+    main.main-inner&attributes(attributes)
+        h1.main-inner__title Контакты
+        p.main-inner__text Свяжитесь с нами удобным для вас способом
+
+        ul.contact-links.main-inner__contact-links
+            li.contact-links__item.contact-links__item--phone Можете позвонить <br>
+                a(href="tel:+79373034455").contact-links__link +7-937-303-44-55
+            li.contact-links__item.contact-links__item--skype Связаться через скайп <br>
+                a(href="skype:TimurSLV?call").contact-links__link TimurSLV
+            li.contact-links__item.contact-links__item--email Написать на почту <br>
+                a(href="mailto:t.studio@mail.ru").contact-links__link t.studio@mail.ru
+
+        +form-main(class="main-inner__form")
+
+        +social(class="main-inner__social")

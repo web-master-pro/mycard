@@ -1,0 +1,168 @@
+.header
+    width 100%
+    position relative
+    overflow hidden
+    +above(1000px)
+        position fixed
+        top 0
+        left 0
+        right 0
+        bottom 0
+
+    &__video
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%,-50%)
+        display none
+        +above(1000px)
+            display block
+
+    &__video-cover
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        background url(img/header-bg.jpg) repeat-x center bottom
+        +below(999px)
+            display block !important
+        @media only screen and (min-width: 1000px) and (min-height: 1049px)
+            background-repeat no-repeat
+            background-size cover
+
+    // &__video-overlay
+    //     position absolute
+    //     top 0
+    //     left 0
+    //     right 0
+    //     bottom 0
+    //     background-color rgba(70,108,127,.1)
+    //     display none
+    //     +below(999px)
+    //         display none !important
+
+    &__content
+        container(1000px)
+        padding 50px 20px 60px
+        z-index 2
+        +above(768px)
+            padding 300px 20px 150px
+        +above(1000px)
+            height 100vh
+
+    &__headers
+        margin 0 auto
+        padding 0
+        text-align center
+        +above(1000px)
+            position absolute
+            top 65%
+            left 50%
+            transform translate(-50%,-50%)
+            ^[0].video-on &
+                top 50%
+                opacity .6
+                transition opacity .3s ease
+                &:hover
+                    opacity 1
+
+    &__logo
+        display block
+        margin 0 auto 25px
+        retinaSprite($icon_logo_small_group)
+        +above(480px)
+            retinaSprite($icon_logo_group)
+        +above(1000px)
+            ^[0].video-on &
+                retinaSprite($icon_logo_white_group)
+                // opacity 0.5
+
+    &__title
+        color #3b3b3b
+        font(Medium)
+        font-size 22px
+        line-height 1.5
+        text-transform uppercase
+        text-align center
+        margin 0 auto 25px
+        strong
+            font(Heavy)
+        +above(768px)
+            font-size 24px
+        +above(1000px)
+            ^[0].video-on &
+                color white
+                // opacity .6
+
+    &__button
+        display inline-block
+        background-color #2d98cd
+        background-image linear-gradient(to top, #3b97d7 0%, #4dc8e2 100%)
+        border none
+        outline none
+        border-radius 10px
+        color #fefefe
+        font(Extra)
+        font-size 16px
+        line-height 1
+        text-transform uppercase
+        text-align center
+        text-decoration none
+        padding 15px
+        margin 0 auto
+        &:hover
+            background-image linear-gradient(to bottom, #3b97d7 0%, #4dc8e2 100%)
+        +above(480px)
+            font-size 24px
+            padding 22px 24px
+        // +above(1000px)
+        //     ^[0].video-on &
+                // opacity .6
+                // &:hover
+                //     opacity .9
+
+.volume
+    display block
+    // display none
+    height 60px
+    color #8cd9ff
+    font()
+    font-size 14px
+    line-height 1
+    text-align center
+    cursor pointer
+    padding-top 40px
+    position absolute
+    bottom 20px
+    left 0
+    right 0
+    +below(999px)
+        display none !important
+    &::before
+        content ""
+        retinaSprite($icon_play_videoback_group)
+        position absolute
+        top 0
+        left 50%
+        margin-left -16px
+        opacity .6
+    &:hover
+    &.on
+        &::before
+            content ""
+            retinaSprite($icon_play_videoback_hover_group)
+            opacity 1
+
+    &__caption
+        display none
+        &--on
+            ^[0]:hover &
+                display inline
+            ^[0].on:hover &
+                display none
+        &--off
+            ^[0]:hover &
+                display none
+            ^[0].on:hover &
+                display inline

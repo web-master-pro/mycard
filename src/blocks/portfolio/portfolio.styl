@@ -1,0 +1,62 @@
+.portfolio
+    background-color #eee
+    &__in
+        container(1280px)
+        padding 90px 0
+
+    &__title
+        color #44afdd
+        font(Bold)
+        font-size 28px
+        text-transform uppercase
+        text-align center
+        margin 0 0 40px
+
+    &__menu
+        list-style none
+        display flex
+        flex-flow row wrap
+        justify-content center
+        align-items center
+        font-size 0
+        padding 0
+        margin 0 0 30px
+        text-align center
+
+    &__menu-item
+        flex 0 0 auto
+        display inline-block
+        // max-width 140px
+        color #979ca3
+        font(Bold)
+        font-size 14px
+        line-height 1
+        // letter-spacing -.03em
+        padding 0
+        margin 0 20px 15px
+        cursor pointer
+        &:hover
+        &.active
+            color #44afdd
+        +above(480px)
+            font-size 18px
+
+    &__videos
+        list-style none
+        display block
+        font-size 0
+        padding 0
+        margin 0
+        text-align center
+
+    &__video
+        display none
+        padding 0
+        margin 0 10px 20px
+        iframe
+            border none
+            width 280px
+            height 158px
+            +above(480px)
+                width 400px
+                height 225px

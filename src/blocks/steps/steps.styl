@@ -1,0 +1,124 @@
+.steps
+    &__in
+        container(960px)
+        padding 50px 20px 10px
+        +above(767px)
+            padding 60px 20px 30px
+
+    &__title
+        color #44afdd
+        font(Bold)
+        font-size 28px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        margin 0 0 45px
+
+    &__main
+        position relative
+        min-height 380px
+
+    &__btn
+        display block
+        padding-top 110px
+        color #3b3b3b
+        font()
+        font-size 16px
+        line-height 1.2
+        text-align center
+        text-transform uppercase
+        text-align center
+        cursor pointer
+        margin 0 auto 30px
+        position relative
+        +above(768px)
+            display inline-block
+            vertical-align top
+            margin 0
+            opacity 0.6
+            transition opacity .3s ease
+            position absolute
+            &.active
+            &:hover
+                opacity 1
+        &--1
+            +above(768px)
+                top 0
+                left 50%
+                margin-left -340px
+            +above(992px)
+                margin-left -380px
+            &::before
+                content ""
+                retinaSprite($icon_book_group)
+                position absolute
+                top 18px
+                left 50%
+                margin-left -62px
+        &--2
+            +above(768px)
+                top 0
+                left 50%
+                margin-left -70px
+            &::before
+                content ""
+                retinaSprite($icon_camera_group)
+                position absolute
+                top 0
+                left 50%
+                margin-left -41px
+        &--3
+            +above(768px)
+                top 0
+                left 50%
+                margin-left 140px
+            +above(992px)
+                margin-left 190px
+            &::before
+                content ""
+                retinaSprite($icon_film_group)
+                position absolute
+                top 18px
+                left 50%
+                margin-left -46px
+
+    &__block
+        display block
+        margin 0 auto 50px
+        +above(768px)
+            display flex
+            flex-flow row nowrap
+            justify-content space-between
+            position absolute
+            top 185px
+            left 0
+            right 0
+            bottom 0
+            opacity 0
+            margin 0
+            transition opacity .3s ease
+            &.active
+                opacity 1
+
+    &__left
+    &__right
+        flex 0 1 49%
+
+    &__caption
+        color #44afdd
+        font(Bold)
+        font-size 18px
+        line-height 1.2
+        text-transform uppercase
+        margin 0 0 5px
+
+    &__text
+        color #3b3b3b
+        font()
+        font-size 18px
+        line-height 1.2
+        margin 0 0 30px
+
+
+
+

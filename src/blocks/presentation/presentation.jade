@@ -1,0 +1,13 @@
+include ../hole/hole
+
+mixin presentation()
+    section.presentation&attributes(attributes)
+        .presentation__in
+            +hole-4()
+            +hole-5()
+            h2.presentation__title Актуальность видеороликов
+            p.presentation__text <strong>Существует главная проблема в бизнесе,</strong> <br>скачайте презентацию и вы узнаете как ее решить
+            .presentation__button-block
+                a(href="assets/presentation.pdf" role="button" target="_blank").presentation__button Скачать презентацию
+                .presentation__arrow
+

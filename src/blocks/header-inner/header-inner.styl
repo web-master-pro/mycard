@@ -1,0 +1,57 @@
+.header-inner
+    background-color #eee
+
+    &__in
+        container(940px)
+        padding 20px 20px
+        text-align center
+        +above(768px)
+            height 81px
+
+    &__logo
+        display block
+        retinaSprite($icon_logo_inner_group)
+        margin 0 auto 15px
+        +above(768px)
+            position absolute
+            left 20px
+            top 50%
+            transform translateY(-50%)
+
+    &__title
+        color #3b3b3b
+        font(Medium)
+        font-size 12px
+        text-transform uppercase
+        line-height 1.2
+        margin 0 auto 15px
+        +above(768px)
+            text-align left
+            position absolute
+            left 245px
+            top 50%
+            transform translateY(-50%)
+        strong
+            font(Extra)
+
+    &__nav
+        display inline-block
+        color #1b1a1a
+        font()
+        font-size 14px
+        text-transform uppercase
+        margin 0 auto
+        +above(768px)
+            position absolute
+            right 80px
+            top 50%
+            transform translateY(-50%)
+
+
+    &__nav-link
+        opacity 0.6
+        color #1b1a1a
+        text-decoration none
+        &:hover
+            opacity 1
+            text-decoration none

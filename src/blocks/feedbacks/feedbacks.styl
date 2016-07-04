@@ -1,0 +1,115 @@
+.feedbacks
+    &__in
+        container(1200px)
+        padding 50px 10px 100px
+        +above(520px)
+            padding 70px 10px
+
+    &__title
+        color #44afdd
+        font(Bold)
+        font-size 28px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        margin 0 0 50px
+        +above(1000px)
+            margin-bottom 110px
+
+    &__slider
+        display block
+        width 280px
+        text-align center
+        position relative
+        margin 0 auto
+        +above(430px)
+            width 300px
+        +above(650px)
+            width 445px
+        +above(1140px)
+            width 990px
+
+        .owl-prev
+            display none
+            position absolute
+            top 50%
+            margin-top -22px
+            left -80px
+            font-size 0
+            color transparent
+            retinaSprite($icon_prev_group)
+            cursor pointer
+            transition transform .3s ease
+            &:hover
+                transform translateX(-4px)
+            +above(520px)
+                display block
+            +above(1140px)
+                left -60px
+            +below(519px)
+                display none !important
+        .owl-next
+            display none
+            position absolute
+            top 50%
+            margin-top -22px
+            right -80px
+            font-size 0
+            color transparent
+            retinaSprite($icon_next_group)
+            cursor pointer
+            transition transform .3s ease
+            &:hover
+                transform translateX(4px)
+            +above(520px)
+                display block
+            +above(1140px)
+                right -60px
+            +below(519px)
+                display none !important
+        .owl-dots
+            display block
+            position absolute
+            bottom -60px
+            left 0
+            right 0
+            text-align center
+            font-size 0
+            +above(520px)
+                display none !important
+
+        .owl-dot
+            retinaSprite($icon_owl_dot_group)
+            display inline-block
+            vertical-align middle
+            margin 0 7px 15px
+            cursor pointer
+            &.active
+            &:hover
+                retinaSprite($icon_owl_dot_active_group)
+
+    &__slide
+        display block
+        vertical-align top
+        width 280px
+        height 156px
+        margin 0 auto
+        position relative
+        +above(430px)
+            width 300px
+            height 168px
+        +above(650px)
+            width 445px
+            height 249px
+        iframe
+            border none
+            width 280px
+            height 156px
+            margin 0 auto
+            +above(430px)
+                width 300px
+                height 168px
+            +above(650px)
+                width 445px
+                height 249px
+

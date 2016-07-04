@@ -1,0 +1,86 @@
+.form-main
+
+    &__title
+        color #44afdd
+        font(Bold)
+        font-size 16px
+        line-height 1
+        text-transform uppercase
+        text-align center
+        margin 0 0 55px
+        +above(768px)
+            text-align left
+
+    &__row
+        display block
+        margin 0 0 40px
+        +above(768px)
+            display flex
+            flex-flow row nowrap
+            justify-content space-between
+
+    &__group-1
+        display block
+        width 100%
+        max-width 300px
+        margin 0 auto
+        +above(768px)
+            flex 0 1 300px
+            margin 0 30px 0 0
+
+    &__group-2
+        display block
+        width 100%
+        max-width 460px
+        margin 0 auto
+        +above(768px)
+            flex 0 1 460px
+            margin 0
+
+    &__group-caption
+        color #2b2e31
+        font()
+        font-size 18px
+        line-height 1.2
+        text-align center
+        margin 0 0 30px
+        +above(768px)
+            text-align left
+
+    &__radio-group
+        width 100%
+        display flex
+        flex-flow row wrap
+
+    &__radio-left
+    &__radio-right
+        flex 1 1 100%
+        +above(650px)
+            flex 1 1 50%
+
+    &__button
+        display block
+        width 100%
+        max-width 280px
+        height 50px
+        background-color #b8dbea
+        border-radius 10px
+        border none
+        outline none
+        color #fdfdfd
+        font(Extra)
+        font-size 18px
+        text-transform uppercase
+        text-align center
+        text-decoration none
+        cursor pointer
+        margin 35px auto 0
+        &:hover
+            color #fefefe
+            text-decoration none
+            background-color #2d98cd
+            background-image linear-gradient(to top, #3b97d7 0%, #4dc8e2 100%)
+        +above(768px)
+            font-size 24px
+            max-width 378px
+            height 62px

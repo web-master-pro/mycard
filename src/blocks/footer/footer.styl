@@ -1,0 +1,123 @@
+.footer
+    overflow hidden
+
+    &__in
+        container(980px)
+        padding 50px 20px
+        +above(1000px)
+            padding 230px 20px 150px
+
+    &__title
+        color #44afdd
+        font(Bold)
+        font-size 28px
+        line-height 1
+        text-transform uppercase
+        margin 0 0 40px
+        text-align center
+        +above(1000px)
+            margin 0 0 95px
+
+    &__main
+        width 100%
+        display flex
+        flex-flow row wrap
+        justify-content space-between
+
+    &__contacts
+        display inline-block
+        flex 0 0 100%
+        +above(768px)
+            flex 0 0 275px
+        +above(992px)
+            margin-left 80px
+
+    &__form
+        flex 0 0 auto
+
+    &__phone
+    &__email
+    &__skype
+        display block
+        width 100%
+        color #3b3b3b
+        font(Medium)
+        font-size 24px
+        line-height 1
+        text-decoration none
+        text-align center
+        margin 0 0 25px
+        &:hover
+            color @color
+            text-decoration none
+        +above(768px)
+            display inline-block
+            width auto
+            text-align left
+    &__email
+        &:hover
+            text-decoration underline
+
+    &__social
+        margin 30px auto 50px
+        +above(768px)
+            margin 65px 0 0
+
+.form-contact
+    display block
+    width 100%
+    +above(768px)
+        width 400px
+
+    &__title
+        color #39c
+        font(Bold)
+        font-size 16px
+        line-height 1.2
+        text-transform uppercase
+        text-align center
+        margin 0 auto 17px
+        max-width 370px
+        +above(768px)
+            text-align left
+            margin 0 0 17px
+
+    &__group
+        display block
+        max-width 318px
+        margin 0 auto
+        +above(768px)
+            margin 0 0 10px
+
+    &__textarea
+        max-width 400px
+        margin 0 auto
+        +above(768px)
+            margin 0
+
+    &__button
+        display block
+        width 100%
+        max-width 290px
+        height 48px
+        background-color #b8dbea
+        border-radius 10px
+        border none
+        outline none
+        color #fdfdfd
+        font(Extra)
+        font-size 18px
+        text-transform uppercase
+        text-align center
+        text-decoration none
+        cursor pointer
+        margin 15px auto 0
+        &:hover
+            color #fefefe
+            text-decoration none
+            background-color #2d98cd
+            background-image linear-gradient(to top, #3b97d7 0%, #4dc8e2 100%)
+        +above(768px)
+            margin 15px 0 0
+
+

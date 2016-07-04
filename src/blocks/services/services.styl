@@ -1,0 +1,217 @@
+.services
+    &__in
+        container(1180px)
+        padding 170px 10px 230px
+        +above(1000px)
+            padding 220px 20px 190px
+
+    &__title
+        color #44afdd
+        font(Bold)
+        font-size 28px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        margin 0 0 35px
+
+
+.s-slider
+    display block
+    position relative
+    margin 0 auto
+    width 280px
+    +above(430px)
+        width 300px
+    +above(650px)
+        width 445px
+    +above(1000px)
+        width 770px
+    +above(1180px)
+        width 900px
+
+    &__slide
+        display block
+        min-height 460px
+        text-align center
+        position relative
+        &--1
+            &::before
+                content ""
+                retinaSprite($icon_artwork_3_group)
+                position absolute
+                top 180px
+                left 50%
+                margin-left -65px
+        &--2
+            padding 0
+        &--3
+            padding 0
+
+    .owl-prev
+        display none
+        width 54px
+        position absolute
+        top 50%
+        margin-top -37px
+        left -60px
+        padding-top 55px
+        color #646567
+        font()
+        font-size 16px
+        line-height 1
+        cursor pointer
+        transition transform .3s ease
+        &::before
+            content ""
+            retinaSprite($icon_prev_group)
+            position absolute
+            top 0
+            left 0
+        &:hover
+            transform translateX(-4px)
+        +above(992px)
+            display block
+        +below(991px)
+            display none !important
+    .owl-next
+        display none
+        width 54px
+        position absolute
+        top 50%
+        margin-top -22px
+        right -60px
+        padding-top 55px
+        color #646567
+        font()
+        font-size 16px
+        line-height 1
+        cursor pointer
+        transition transform .3s ease
+        &::before
+            content ""
+            retinaSprite($icon_next_group)
+            position absolute
+            top 0
+            left 0
+        &:hover
+            transform translateX(4px)
+        +above(992px)
+            display block
+        +below(991px)
+            display none !important
+    .owl-dots
+        display block
+        position absolute
+        bottom -30px
+        left 0
+        right 0
+        text-align center
+        font-size 0
+        +above(992px)
+            display none !important
+
+    .owl-dot
+        retinaSprite($icon_owl_dot_group)
+        display inline-block
+        vertical-align middle
+        margin 0 7px 15px
+        cursor pointer
+        &.active
+        &:hover
+            retinaSprite($icon_owl_dot_active_group)
+
+    &__text
+        color #3b3b3b
+        font()
+        font-size 16px
+        line-height 1.2
+        text-align center
+        max-width 330px
+        margin 0 auto
+
+    &__box
+        display inline-block
+        vertical-align top
+        width 100%
+        max-width 340px
+        min-height 460px
+        background-color #fff
+        padding 30px 10px 20px
+        margin 0 0 20px
+        +above(480px)
+            margin 0 10px 30px
+        position relative
+        +above(1180px)
+            padding 30px 30px 20px
+            margin 0 20px 30px
+            max-width 390px
+
+    &__box-title
+        color #3b3b3b
+        font(Bold)
+        font-size 16px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        padding 0 0 15px
+        border-bottom 3px solid #e5e5e5
+        margin 0 0 15px
+        +above(480px)
+            font-size 18px
+
+    &__box-list
+        list-style none
+        text-align center
+        padding 0
+        margin 0
+
+    &__box-item
+        color #3b3b3b
+        font(Medium)
+        font-size 16px
+        line-height 1
+        text-align center
+        padding 0
+        margin 10px 0
+
+    &__price
+        color #44afdd
+        font(Bold)
+        font-size 21px
+        line-height 1
+        text-align center
+        margin 0
+        position absolute
+        bottom 85px
+        left 0
+        right 0
+
+    &__button
+        display block
+        width 220px
+        background-color #2d98cd
+        background-image linear-gradient(to top, #81bce6 0%, #81bce6 100%)
+        border-radius 10px
+        borde none
+        outline none
+        color #fefefe
+        font(Extra)
+        font-size 10px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        text-decoration none
+        padding 15px 20px
+        margin 0 auto
+        position absolute
+        bottom 25px
+        left 50%
+        margin-left -125px
+        &:hover
+            background-color #2d98cd
+            background-image linear-gradient(to top, #3b97d7 0%, #4dc8e2 100%)
+            text-decoration none
+        +above(480px)
+            width 250px
+            font-size 14px
+

@@ -1,0 +1,37 @@
+mixin form-main()
+    form(action="assets/sendmail.php" method="POST").form-main.popup#form-main&attributes(attributes)
+        input(type="hidden" name="form" value="form-main")
+        h2.form-main__title Расскажите нам, какая у вас стоит задача, и мы придумаем решение
+        .form-main__row
+            .form-main__group-1
+                input(type="text" name="name" placeholder="ФИО").input.input--big.form-main__input
+                input(type="tel" name="phone" placeholder="Телефон").input.input--big.form-main__input.js-phone-field
+            .form-main__group-2
+                .textarea.textarea--big
+                    .textarea__placeholder Кратко опишите задачу
+                    textarea(name="message").textarea__textarea
+        h3.form-main__group-caption Что из перечисленного, на ваш взгляд, поможет решить поставленную задачу 
+        .form-main__radio-group
+            .form-main__radio-left
+                .radio
+                    input(type="radio" name="theme" id="contact-form-radio-1" value="Видеоотчет" checked).radio__radio
+                    label(for="contact-form-radio-1").radio__label Видеоотчет
+                .radio
+                    input(type="radio" name="theme" id="contact-form-radio-2" value="Информационный ролик").radio__radio
+                    label(for="contact-form-radio-2").radio__label Информационный ролик
+                .radio
+                    input(type="radio" name="theme" id="contact-form-radio-3" value="Обзорный ролик").radio__radio
+                    label(for="contact-form-radio-3").radio__label Обзорный ролик
+            .form-main__radio-right
+                .radio
+                    input(type="radio" name="theme" id="contact-form-radio-4" value="Рекламный ролик").radio__radio
+                    label(for="contact-form-radio-4").radio__label Рекламный ролик
+                .radio
+                    input(type="radio" name="theme" id="contact-form-radio-5" value="Презентационный ролик").radio__radio
+                    label(for="contact-form-radio-5").radio__label Презентационный ролик
+                .radio
+                    input(type="radio" name="theme" id="contact-form-radio-6" value="Корпоративный имиджевый фильм").radio__radio
+                    label(for="contact-form-radio-6").radio__label Корпоративный имиджевый фильм
+
+        .form-main__button-wrapper
+            button(type="submit").form-main__button Оставить заявку

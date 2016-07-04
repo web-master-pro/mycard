@@ -1,0 +1,188 @@
+.popup-thankyou
+    display block
+    max-width 400px
+    min-height 200px
+    background-color white
+    box-shadow 0 0 30px rgba(0, 0, 0, 0.3)
+    padding 60px 15px 50px
+    margin auto
+    text-align center
+
+    &__title
+        color #49bcdf
+        font(Extra)
+        font-size 24px
+        line-height 1.2
+        text-align center
+        text-transform uppercase
+        margin 0 auto 1em
+        +above(480px)
+            font-size 30px
+        +above(800px)
+            font-size 34px
+        +above(1000px)
+            font-size 40px
+
+    &__text
+        color #2b2e31
+        font()
+        font-size 18px
+        line-height 1.5
+        text-align center
+        margin 0 auto 1.5em
+        +above(480px)
+            font-size 24px
+
+    &__button
+        display inline-block
+        border none
+        outline none
+        background-color #8cd9ff
+        background-image linear-gradient(180deg, #8cd9ff 0%, #3fbaf7 100%)
+        color #fffefe
+        font(Medium)
+        font-size 16px
+        text-align center
+        line-height 1
+        text-transform uppercase
+        padding 18px 30px
+        margin 20px 0 0
+        cursor pointer
+        &:hover
+            background-image linear-gradient(0deg, #8cd9ff 0%, #3fbaf7 100%)
+
+.form-popup
+    display block
+    max-width 930px
+    background-color white
+    box-shadow 0 3px 49px rgba(0, 0, 0, 0.2)
+    padding 70px 20px 35px
+    position relative
+    margin 20px auto
+    +above(480px)
+        padding 70px 40px 35px
+    +above(992px)
+        padding 70px 110px 35px
+
+    &__title
+        color #44afdd
+        font(Extra)
+        font-size 30px
+        line-height 1
+        text-transform uppercase
+        text-align center
+        margin 0 0 50px
+        +above(768px)
+            font-size 40px
+
+    &__group
+        display block
+        width 100%
+        max-width 300px
+        margin 0 auto
+
+    &__group-caption
+        color #2b2e31
+        font()
+        font-size 18px
+        line-height 1.2
+        text-align center
+        margin 0 0 30px
+
+    &__radio-group
+        width 100%
+        display flex
+        flex-flow row wrap
+
+    &__radio-left
+    &__radio-right
+        flex 1 1 100%
+        +above(650px)
+            flex 1 1 50%
+
+    &__button
+        display block
+        width 100%
+        max-width 280px
+        height 50px
+        background-color #b8dbea
+        border-radius 10px
+        border none
+        outline none
+        color #fdfdfd
+        font(Extra)
+        font-size 18px
+        text-transform uppercase
+        text-align center
+        text-decoration none
+        cursor pointer
+        margin 35px auto 0
+        &:hover
+            color #fefefe
+            text-decoration none
+            background-color #2d98cd
+            background-image linear-gradient(to top, #3b97d7 0%, #4dc8e2 100%)
+        +above(768px)
+            font-size 24px
+            max-width 378px
+            height 62px
+
+    &__close-btn
+        display inline-block
+        border none
+        outline none
+        background none
+        opacity 0.6
+        color #44afdd
+        font()
+        font-size 12px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        padding 0
+        position absolute
+        top 10px
+        right 20px
+        cursor pointer
+        transition opacity .3s ease
+        span
+            font(Bold)
+            font-size 30px
+        &:hover
+            opacity 1
+        +above(480px)
+            font-size 14px
+            top 15px
+            right 25px
+            span
+                font-size 40px
+
+
+
+
+.popup
+    .mfp-close
+        display none
+
+.mfp-zoom-in .popup
+    opacity 0
+    transition all 0.2s ease-in-out
+    transform scale(0.8)
+
+.mfp-zoom-in.mfp-bg
+    opacity 0
+    transition all 0.3s ease-out
+
+.mfp-zoom-in.mfp-ready .popup
+    opacity 1
+    transform scale(1)
+
+.mfp-zoom-in.mfp-ready.mfp-bg
+    opacity 0.8
+
+.mfp-zoom-in.mfp-removing .popup
+    transform scale(0.8)
+    opacity 0
+
+.mfp-zoom-in.mfp-removing.mfp-bg
+    opacity 0

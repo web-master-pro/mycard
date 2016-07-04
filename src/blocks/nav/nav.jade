@@ -1,0 +1,20 @@
+include ../nav-button/nav-button
+
+mixin nav()
+    nav.nav&attributes(attributes)
+        +nav-button(class="nav__button")
+        ul.nav__menu
+            li.nav__item.nav__item--about
+                a(href="#about").nav__link О компании
+            li.nav__item.nav__item--portfolio
+                a(href="#portfolio").nav__link Портфолио
+            li.nav__item.nav__item--team
+                a(href="#team").nav__link Наша команда
+            li.nav__item.nav__item--services
+                a(href="#services").nav__link Услуги
+            li.nav__item.nav__item--clients
+                a(href="#clients").nav__link Клиенты
+            li.nav__item.nav__item--feedbacks
+                a(href="#feedbacks").nav__link Отзывы
+            li.nav__item.nav__item--contacts
+                a(href="#contacts").nav__link Контакты

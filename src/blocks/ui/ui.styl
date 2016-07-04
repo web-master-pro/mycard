@@ -1,0 +1,186 @@
+input()
+    display block
+    width 100%
+    height 32px
+    background-color #f5f5f5
+    border 1px solid #bebebe
+    color #979899
+    font()
+    font-size 14px
+    line-height 30px
+    padding 0 8px
+    outline none
+    position relative
+    &:focus
+        background-color white
+        border 2px solid #8cd9ff
+
+
+    &::-webkit-input-placeholder
+        color #979899
+        opacity 1
+    &::-moz-placeholder
+        color #979899
+        opacity 1
+    &:-moz-placeholder
+        color #979899
+        opacity 1
+    &:-ms-input-placeholder
+        color #979899
+        opacity 1
+    &:input-placeholder
+        color #979899
+        opacity 1
+
+    // &:focus::-webkit-input-placeholder
+    //     color #979899
+    // &:focus::-moz-placeholder
+    //     color #979899
+    // &:focus:-moz-placeholder
+    //     color #979899
+    // &:focus:-ms-input-placeholder
+    //     color #979899
+    // &:focus:input-placeholder
+    //     color #979899
+
+    &:-webkit-autofill
+        -webkit-box-shadow inset 0 0 0 50px rgba(255,255,255,1) !important
+        background-color white !important
+        -webkit-text-fill-color #000 !important;
+        color #000 !important
+
+textarea()
+    display block
+    width 100%
+    height 130px
+    background-color #f5f5f5
+    border 1px solid #bebebe
+    color #979899
+    font()
+    font-size 14px
+    line-height 1.2
+    outline none
+    resize none
+    padding 4px 8px
+    position relative
+    &:focus
+        background-color white
+        border 2px solid #8cd9ff
+
+.input
+    input()
+    margin 0 0 10px
+    &--big
+        height 45px
+        line-height 43px
+        color #2b2e31
+        font-size 18px
+        padding 0 20px
+        background-color #fff
+        border 1px solid rgba(0, 0, 0, 0.2)
+        margin-bottom 30px
+        &:focus
+            border 2px solid #8cd9ff
+
+.textarea
+    display block
+    width 100%
+    padding 0
+    position relative
+
+    &__textarea
+        textarea()
+        margin 0 0 10px
+        position relative
+        z-index 1
+        ^[0]--big &
+            font-size 18px
+            padding 10px 20px
+            margin-bottom 30px
+            height 120px
+            background-color #fff
+            border 1px solid rgba(0, 0, 0, 0.2)
+            &:focus
+                border 2px solid #8cd9ff
+
+    &__placeholder
+        display inline-block
+        color #979899
+        font()
+        font-size 14px
+        line-height 1
+        position absolute
+        top 0
+        left 0
+        right 0
+        padding 8px 8px
+        z-index 2
+        ^[0]--big &
+            font-size 18px
+            padding 20px 21px
+
+
+
+label.invalid-field
+    display block
+    width 100%
+    color red
+    font()
+    font-size 12px
+    line-height 1
+    text-align center
+    padding 0px 2px
+    margin -5px auto 7px
+    &.hidden
+        display none !important
+
+.form-popup label.invalid-field
+.form-main label.invalid-field
+    font-size 12px
+    margin -20px auto 10px
+
+.textarea--big label.invalid-field
+    position absolute
+    bottom 10px
+    left 0
+    right 0
+    padding 0 21px
+    z-index 30
+
+
+
+.radio
+    display block
+    position relative
+    margin-bottom 10px
+
+    &__radio
+        display block
+        padding 0
+        margin 0
+        opacity 0
+
+    &__label
+        display block
+        width 100%
+        color #2b2e31
+        font()
+        font-size 18px
+        line-height 1
+        text-align left
+        cursor pointer
+        padding 0 0 0 35px
+        margin 0
+        position relative
+        &::before
+            content ""
+            retinaSprite($icon_radio_group)
+            position absolute
+            top 2px
+            left 0
+
+    &__radio:checked + &__label
+        &::before
+            retinaSprite($icon_radio_checked_group)
+
+

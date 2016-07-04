@@ -1,0 +1,26 @@
+include ../social/social
+mixin footer()
+    footer.footer&attributes(attributes)
+        .footer__in
+            h2.footer__title Контакты
+            .footer__main
+                .footer__contacts
+                    a(href="tel:+79373034455").footer__phone +7-937-303-44-55
+                    a(href="mailto:t.studio@mail.ru").footer__email t.studio@mail.ru
+                    a(href="skype:TimurSLV?call").footer__skype TimurSLV
+                    
+                    +social(class="footer__social")
+
+                form(action="assets/sendmail.php" method="POST").form-contact.footer__form#form-contact
+                    input(type="hidden" name="form" value="form-contact")
+                    h3.form-contact__title По всем имеющимся вопросам, оставьте заявку на обратную связь
+                    .form-contact__group
+                        input(type="text" name="name" placeholder="ФИО").input
+                        input(type="tel" name="phone" placeholder="Телефон").input.js-phone-field
+                        input(type="email" name="email" placeholder="Email").input
+                    .textarea.form-contact__textarea
+                        .textarea__placeholder Задать вопрос
+                        textarea(name="message").textarea__textarea
+                    button(type="submit").form-contact__button Оставить заявку
+
+

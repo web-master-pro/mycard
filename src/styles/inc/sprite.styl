@@ -1,0 +1,979 @@
+/*
+Stylus variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon_home_width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon_home = x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet = width height image $spritesheet_sprites;
+*/
+$icon_arrow_name = 'icon-arrow';
+$icon_arrow_x = 284px;
+$icon_arrow_y = 494px;
+$icon_arrow_offset_x = -284px;
+$icon_arrow_offset_y = -494px;
+$icon_arrow_width = 38px;
+$icon_arrow_height = 52px;
+$icon_arrow_total_width = 686px;
+$icon_arrow_total_height = 591px;
+$icon_arrow_image = 'img/sprite.png';
+$icon_arrow = 284px 494px -284px -494px 38px 52px 686px 591px 'img/sprite.png' 'icon-arrow';
+$icon_artwork_1_name = 'icon-artwork-1';
+$icon_artwork_1_x = 0px;
+$icon_artwork_1_y = 203px;
+$icon_artwork_1_offset_x = 0px;
+$icon_artwork_1_offset_y = -203px;
+$icon_artwork_1_width = 170px;
+$icon_artwork_1_height = 134px;
+$icon_artwork_1_total_width = 686px;
+$icon_artwork_1_total_height = 591px;
+$icon_artwork_1_image = 'img/sprite.png';
+$icon_artwork_1 = 0px 203px 0px -203px 170px 134px 686px 591px 'img/sprite.png' 'icon-artwork-1';
+$icon_artwork_2_name = 'icon-artwork-2';
+$icon_artwork_2_x = 0px;
+$icon_artwork_2_y = 347px;
+$icon_artwork_2_offset_x = 0px;
+$icon_artwork_2_offset_y = -347px;
+$icon_artwork_2_width = 154px;
+$icon_artwork_2_height = 137px;
+$icon_artwork_2_total_width = 686px;
+$icon_artwork_2_total_height = 591px;
+$icon_artwork_2_image = 'img/sprite.png';
+$icon_artwork_2 = 0px 347px 0px -347px 154px 137px 686px 591px 'img/sprite.png' 'icon-artwork-2';
+$icon_artwork_3_name = 'icon-artwork-3';
+$icon_artwork_3_x = 180px;
+$icon_artwork_3_y = 203px;
+$icon_artwork_3_offset_x = -180px;
+$icon_artwork_3_offset_y = -203px;
+$icon_artwork_3_width = 133px;
+$icon_artwork_3_height = 129px;
+$icon_artwork_3_total_width = 686px;
+$icon_artwork_3_total_height = 591px;
+$icon_artwork_3_image = 'img/sprite.png';
+$icon_artwork_3 = 180px 203px -180px -203px 133px 129px 686px 591px 'img/sprite.png' 'icon-artwork-3';
+$icon_artwork_4_name = 'icon-artwork-4';
+$icon_artwork_4_x = 0px;
+$icon_artwork_4_y = 0px;
+$icon_artwork_4_offset_x = 0px;
+$icon_artwork_4_offset_y = 0px;
+$icon_artwork_4_width = 237px;
+$icon_artwork_4_height = 193px;
+$icon_artwork_4_total_width = 686px;
+$icon_artwork_4_total_height = 591px;
+$icon_artwork_4_image = 'img/sprite.png';
+$icon_artwork_4 = 0px 0px 0px 0px 237px 193px 686px 591px 'img/sprite.png' 'icon-artwork-4';
+$icon_book_name = 'icon-book';
+$icon_book_x = 296px;
+$icon_book_y = 347px;
+$icon_book_offset_x = -296px;
+$icon_book_offset_y = -347px;
+$icon_book_width = 123px;
+$icon_book_height = 68px;
+$icon_book_total_width = 686px;
+$icon_book_total_height = 591px;
+$icon_book_image = 'img/sprite.png';
+$icon_book = 296px 347px -296px -347px 123px 68px 686px 591px 'img/sprite.png' 'icon-book';
+$icon_camera_name = 'icon-camera';
+$icon_camera_x = 91px;
+$icon_camera_y = 494px;
+$icon_camera_offset_x = -91px;
+$icon_camera_offset_y = -494px;
+$icon_camera_width = 82px;
+$icon_camera_height = 92px;
+$icon_camera_total_width = 686px;
+$icon_camera_total_height = 591px;
+$icon_camera_image = 'img/sprite.png';
+$icon_camera = 91px 494px -91px -494px 82px 92px 686px 591px 'img/sprite.png' 'icon-camera';
+$icon_email_name = 'icon-email';
+$icon_email_x = 287px;
+$icon_email_y = 452px;
+$icon_email_offset_x = -287px;
+$icon_email_offset_y = -452px;
+$icon_email_width = 28px;
+$icon_email_height = 27px;
+$icon_email_total_width = 686px;
+$icon_email_total_height = 591px;
+$icon_email_image = 'img/sprite.png';
+$icon_email = 287px 452px -287px -452px 28px 27px 686px 591px 'img/sprite.png' 'icon-email';
+$icon_film_name = 'icon-film';
+$icon_film_x = 183px;
+$icon_film_y = 494px;
+$icon_film_offset_x = -183px;
+$icon_film_offset_y = -494px;
+$icon_film_width = 91px;
+$icon_film_height = 69px;
+$icon_film_total_width = 686px;
+$icon_film_total_height = 591px;
+$icon_film_image = 'img/sprite.png';
+$icon_film = 183px 494px -183px -494px 91px 69px 686px 591px 'img/sprite.png' 'icon-film';
+$icon_logo_inner_name = 'icon-logo-inner';
+$icon_logo_inner_x = 323px;
+$icon_logo_inner_y = 271px;
+$icon_logo_inner_offset_x = -323px;
+$icon_logo_inner_offset_y = -271px;
+$icon_logo_inner_width = 199px;
+$icon_logo_inner_height = 45px;
+$icon_logo_inner_total_width = 686px;
+$icon_logo_inner_total_height = 591px;
+$icon_logo_inner_image = 'img/sprite.png';
+$icon_logo_inner = 323px 271px -323px -271px 199px 45px 686px 591px 'img/sprite.png' 'icon-logo-inner';
+$icon_logo_small_name = 'icon-logo-small';
+$icon_logo_small_x = 323px;
+$icon_logo_small_y = 203px;
+$icon_logo_small_offset_x = -323px;
+$icon_logo_small_offset_y = -203px;
+$icon_logo_small_width = 256px;
+$icon_logo_small_height = 58px;
+$icon_logo_small_total_width = 686px;
+$icon_logo_small_total_height = 591px;
+$icon_logo_small_image = 'img/sprite.png';
+$icon_logo_small = 323px 203px -323px -203px 256px 58px 686px 591px 'img/sprite.png' 'icon-logo-small';
+$icon_logo_white_name = 'icon-logo-white';
+$icon_logo_white_x = 247px;
+$icon_logo_white_y = 89px;
+$icon_logo_white_offset_x = -247px;
+$icon_logo_white_offset_y = -89px;
+$icon_logo_white_width = 350px;
+$icon_logo_white_height = 79px;
+$icon_logo_white_total_width = 686px;
+$icon_logo_white_total_height = 591px;
+$icon_logo_white_image = 'img/sprite.png';
+$icon_logo_white = 247px 89px -247px -89px 350px 79px 686px 591px 'img/sprite.png' 'icon-logo-white';
+$icon_logo_name = 'icon-logo';
+$icon_logo_x = 247px;
+$icon_logo_y = 0px;
+$icon_logo_offset_x = -247px;
+$icon_logo_offset_y = 0px;
+$icon_logo_width = 350px;
+$icon_logo_height = 79px;
+$icon_logo_total_width = 686px;
+$icon_logo_total_height = 591px;
+$icon_logo_image = 'img/sprite.png';
+$icon_logo = 247px 0px -247px 0px 350px 79px 686px 591px 'img/sprite.png' 'icon-logo';
+$icon_next_name = 'icon-next';
+$icon_next_x = 607px;
+$icon_next_y = 204px;
+$icon_next_offset_x = -607px;
+$icon_next_offset_y = -204px;
+$icon_next_width = 54px;
+$icon_next_height = 44px;
+$icon_next_total_width = 686px;
+$icon_next_total_height = 591px;
+$icon_next_image = 'img/sprite.png';
+$icon_next = 607px 204px -607px -204px 54px 44px 686px 591px 'img/sprite.png' 'icon-next';
+$icon_numbers_12_name = 'icon-numbers-12';
+$icon_numbers_12_x = 0px;
+$icon_numbers_12_y = 494px;
+$icon_numbers_12_offset_x = 0px;
+$icon_numbers_12_offset_y = -494px;
+$icon_numbers_12_width = 81px;
+$icon_numbers_12_height = 97px;
+$icon_numbers_12_total_width = 686px;
+$icon_numbers_12_total_height = 591px;
+$icon_numbers_12_image = 'img/sprite.png';
+$icon_numbers_12 = 0px 494px 0px -494px 81px 97px 686px 591px 'img/sprite.png' 'icon-numbers-12';
+$icon_numbers_18_name = 'icon-numbers-18';
+$icon_numbers_18_x = 607px;
+$icon_numbers_18_y = 0px;
+$icon_numbers_18_offset_x = -607px;
+$icon_numbers_18_offset_y = 0px;
+$icon_numbers_18_width = 79px;
+$icon_numbers_18_height = 98px;
+$icon_numbers_18_total_width = 686px;
+$icon_numbers_18_total_height = 591px;
+$icon_numbers_18_image = 'img/sprite.png';
+$icon_numbers_18 = 607px 0px -607px 0px 79px 98px 686px 591px 'img/sprite.png' 'icon-numbers-18';
+$icon_numbers_570_name = 'icon-numbers-570';
+$icon_numbers_570_x = 164px;
+$icon_numbers_570_y = 347px;
+$icon_numbers_570_offset_x = -164px;
+$icon_numbers_570_offset_y = -347px;
+$icon_numbers_570_width = 122px;
+$icon_numbers_570_height = 95px;
+$icon_numbers_570_total_width = 686px;
+$icon_numbers_570_total_height = 591px;
+$icon_numbers_570_image = 'img/sprite.png';
+$icon_numbers_570 = 164px 347px -164px -347px 122px 95px 686px 591px 'img/sprite.png' 'icon-numbers-570';
+$icon_numbers_7_name = 'icon-numbers-7';
+$icon_numbers_7_x = 607px;
+$icon_numbers_7_y = 108px;
+$icon_numbers_7_offset_x = -607px;
+$icon_numbers_7_offset_y = -108px;
+$icon_numbers_7_width = 42px;
+$icon_numbers_7_height = 86px;
+$icon_numbers_7_total_width = 686px;
+$icon_numbers_7_total_height = 591px;
+$icon_numbers_7_image = 'img/sprite.png';
+$icon_numbers_7 = 607px 108px -607px -108px 42px 86px 686px 591px 'img/sprite.png' 'icon-numbers-7';
+$icon_owl_dot_active_name = 'icon-owl-dot-active';
+$icon_owl_dot_active_x = 659px;
+$icon_owl_dot_active_y = 132px;
+$icon_owl_dot_active_offset_x = -659px;
+$icon_owl_dot_active_offset_y = -132px;
+$icon_owl_dot_active_width = 14px;
+$icon_owl_dot_active_height = 14px;
+$icon_owl_dot_active_total_width = 686px;
+$icon_owl_dot_active_total_height = 591px;
+$icon_owl_dot_active_image = 'img/sprite.png';
+$icon_owl_dot_active = 659px 132px -659px -132px 14px 14px 686px 591px 'img/sprite.png' 'icon-owl-dot-active';
+$icon_owl_dot_name = 'icon-owl-dot';
+$icon_owl_dot_x = 659px;
+$icon_owl_dot_y = 108px;
+$icon_owl_dot_offset_x = -659px;
+$icon_owl_dot_offset_y = -108px;
+$icon_owl_dot_width = 14px;
+$icon_owl_dot_height = 14px;
+$icon_owl_dot_total_width = 686px;
+$icon_owl_dot_total_height = 591px;
+$icon_owl_dot_image = 'img/sprite.png';
+$icon_owl_dot = 659px 108px -659px -108px 14px 14px 686px 591px 'img/sprite.png' 'icon-owl-dot';
+$icon_phone_name = 'icon-phone';
+$icon_phone_x = 539px;
+$icon_phone_y = 347px;
+$icon_phone_offset_x = -539px;
+$icon_phone_offset_y = -347px;
+$icon_phone_width = 35px;
+$icon_phone_height = 35px;
+$icon_phone_total_width = 686px;
+$icon_phone_total_height = 591px;
+$icon_phone_image = 'img/sprite.png';
+$icon_phone = 539px 347px -539px -347px 35px 35px 686px 591px 'img/sprite.png' 'icon-phone';
+$icon_play_videoback_hover_name = 'icon-play-videoback-hover';
+$icon_play_videoback_hover_x = 206px;
+$icon_play_videoback_hover_y = 452px;
+$icon_play_videoback_hover_offset_x = -206px;
+$icon_play_videoback_hover_offset_y = -452px;
+$icon_play_videoback_hover_width = 32px;
+$icon_play_videoback_hover_height = 31px;
+$icon_play_videoback_hover_total_width = 686px;
+$icon_play_videoback_hover_total_height = 591px;
+$icon_play_videoback_hover_image = 'img/sprite.png';
+$icon_play_videoback_hover = 206px 452px -206px -452px 32px 31px 686px 591px 'img/sprite.png' 'icon-play-videoback-hover';
+$icon_play_videoback_name = 'icon-play-videoback';
+$icon_play_videoback_x = 164px;
+$icon_play_videoback_y = 452px;
+$icon_play_videoback_offset_x = -164px;
+$icon_play_videoback_offset_y = -452px;
+$icon_play_videoback_width = 32px;
+$icon_play_videoback_height = 31px;
+$icon_play_videoback_total_width = 686px;
+$icon_play_videoback_total_height = 591px;
+$icon_play_videoback_image = 'img/sprite.png';
+$icon_play_videoback = 164px 452px -164px -452px 32px 31px 686px 591px 'img/sprite.png' 'icon-play-videoback';
+$icon_prev_name = 'icon-prev';
+$icon_prev_x = 607px;
+$icon_prev_y = 258px;
+$icon_prev_offset_x = -607px;
+$icon_prev_offset_y = -258px;
+$icon_prev_width = 54px;
+$icon_prev_height = 44px;
+$icon_prev_total_width = 686px;
+$icon_prev_total_height = 591px;
+$icon_prev_image = 'img/sprite.png';
+$icon_prev = 607px 258px -607px -258px 54px 44px 686px 591px 'img/sprite.png' 'icon-prev';
+$icon_radio_checked_name = 'icon-radio-checked';
+$icon_radio_checked_x = 659px;
+$icon_radio_checked_y = 179px;
+$icon_radio_checked_offset_x = -659px;
+$icon_radio_checked_offset_y = -179px;
+$icon_radio_checked_width = 13px;
+$icon_radio_checked_height = 13px;
+$icon_radio_checked_total_width = 686px;
+$icon_radio_checked_total_height = 591px;
+$icon_radio_checked_image = 'img/sprite.png';
+$icon_radio_checked = 659px 179px -659px -179px 13px 13px 686px 591px 'img/sprite.png' 'icon-radio-checked';
+$icon_radio_name = 'icon-radio';
+$icon_radio_x = 659px;
+$icon_radio_y = 156px;
+$icon_radio_offset_x = -659px;
+$icon_radio_offset_y = -156px;
+$icon_radio_width = 13px;
+$icon_radio_height = 13px;
+$icon_radio_total_width = 686px;
+$icon_radio_total_height = 591px;
+$icon_radio_image = 'img/sprite.png';
+$icon_radio = 659px 156px -659px -156px 13px 13px 686px 591px 'img/sprite.png' 'icon-radio';
+$icon_skype_name = 'icon-skype';
+$icon_skype_x = 248px;
+$icon_skype_y = 452px;
+$icon_skype_offset_x = -248px;
+$icon_skype_offset_y = -452px;
+$icon_skype_width = 29px;
+$icon_skype_height = 29px;
+$icon_skype_total_width = 686px;
+$icon_skype_total_height = 591px;
+$icon_skype_image = 'img/sprite.png';
+$icon_skype = 248px 452px -248px -452px 29px 29px 686px 591px 'img/sprite.png' 'icon-skype';
+$icon_social_fb_hover_name = 'icon-social-fb-hover';
+$icon_social_fb_hover_x = 484px;
+$icon_social_fb_hover_y = 347px;
+$icon_social_fb_hover_offset_x = -484px;
+$icon_social_fb_hover_offset_y = -347px;
+$icon_social_fb_hover_width = 45px;
+$icon_social_fb_hover_height = 45px;
+$icon_social_fb_hover_total_width = 686px;
+$icon_social_fb_hover_total_height = 591px;
+$icon_social_fb_hover_image = 'img/sprite.png';
+$icon_social_fb_hover = 484px 347px -484px -347px 45px 45px 686px 591px 'img/sprite.png' 'icon-social-fb-hover';
+$icon_social_fb_name = 'icon-social-fb';
+$icon_social_fb_x = 532px;
+$icon_social_fb_y = 271px;
+$icon_social_fb_offset_x = -532px;
+$icon_social_fb_offset_y = -271px;
+$icon_social_fb_width = 45px;
+$icon_social_fb_height = 45px;
+$icon_social_fb_total_width = 686px;
+$icon_social_fb_total_height = 591px;
+$icon_social_fb_image = 'img/sprite.png';
+$icon_social_fb = 532px 271px -532px -271px 45px 45px 686px 591px 'img/sprite.png' 'icon-social-fb';
+$icon_social_ok_hover_name = 'icon-social-ok-hover';
+$icon_social_ok_hover_x = 607px;
+$icon_social_ok_hover_y = 532px;
+$icon_social_ok_hover_offset_x = -607px;
+$icon_social_ok_hover_offset_y = -532px;
+$icon_social_ok_hover_width = 45px;
+$icon_social_ok_hover_height = 45px;
+$icon_social_ok_hover_total_width = 686px;
+$icon_social_ok_hover_total_height = 591px;
+$icon_social_ok_hover_image = 'img/sprite.png';
+$icon_social_ok_hover = 607px 532px -607px -532px 45px 45px 686px 591px 'img/sprite.png' 'icon-social-ok-hover';
+$icon_social_ok_name = 'icon-social-ok';
+$icon_social_ok_x = 607px;
+$icon_social_ok_y = 477px;
+$icon_social_ok_offset_x = -607px;
+$icon_social_ok_offset_y = -477px;
+$icon_social_ok_width = 45px;
+$icon_social_ok_height = 45px;
+$icon_social_ok_total_width = 686px;
+$icon_social_ok_total_height = 591px;
+$icon_social_ok_image = 'img/sprite.png';
+$icon_social_ok = 607px 477px -607px -477px 45px 45px 686px 591px 'img/sprite.png' 'icon-social-ok';
+$icon_social_vk_hover_name = 'icon-social-vk-hover';
+$icon_social_vk_hover_x = 607px;
+$icon_social_vk_hover_y = 422px;
+$icon_social_vk_hover_offset_x = -607px;
+$icon_social_vk_hover_offset_y = -422px;
+$icon_social_vk_hover_width = 45px;
+$icon_social_vk_hover_height = 45px;
+$icon_social_vk_hover_total_width = 686px;
+$icon_social_vk_hover_total_height = 591px;
+$icon_social_vk_hover_image = 'img/sprite.png';
+$icon_social_vk_hover = 607px 422px -607px -422px 45px 45px 686px 591px 'img/sprite.png' 'icon-social-vk-hover';
+$icon_social_vk_name = 'icon-social-vk';
+$icon_social_vk_x = 607px;
+$icon_social_vk_y = 367px;
+$icon_social_vk_offset_x = -607px;
+$icon_social_vk_offset_y = -367px;
+$icon_social_vk_width = 45px;
+$icon_social_vk_height = 45px;
+$icon_social_vk_total_width = 686px;
+$icon_social_vk_total_height = 591px;
+$icon_social_vk_image = 'img/sprite.png';
+$icon_social_vk = 607px 367px -607px -367px 45px 45px 686px 591px 'img/sprite.png' 'icon-social-vk';
+$icon_social_yt_hover_name = 'icon-social-yt-hover';
+$icon_social_yt_hover_x = 607px;
+$icon_social_yt_hover_y = 312px;
+$icon_social_yt_hover_offset_x = -607px;
+$icon_social_yt_hover_offset_y = -312px;
+$icon_social_yt_hover_width = 45px;
+$icon_social_yt_hover_height = 45px;
+$icon_social_yt_hover_total_width = 686px;
+$icon_social_yt_hover_total_height = 591px;
+$icon_social_yt_hover_image = 'img/sprite.png';
+$icon_social_yt_hover = 607px 312px -607px -312px 45px 45px 686px 591px 'img/sprite.png' 'icon-social-yt-hover';
+$icon_social_yt_name = 'icon-social-yt';
+$icon_social_yt_x = 429px;
+$icon_social_yt_y = 347px;
+$icon_social_yt_offset_x = -429px;
+$icon_social_yt_offset_y = -347px;
+$icon_social_yt_width = 45px;
+$icon_social_yt_height = 45px;
+$icon_social_yt_total_width = 686px;
+$icon_social_yt_total_height = 591px;
+$icon_social_yt_image = 'img/sprite.png';
+$icon_social_yt = 429px 347px -429px -347px 45px 45px 686px 591px 'img/sprite.png' 'icon-social-yt';
+$icon_arrow_2x_name = 'icon-arrow@2x'
+$icon_arrow_2x_x = 568px
+$icon_arrow_2x_y = 988px
+$icon_arrow_2x_offset_x = -568px
+$icon_arrow_2x_offset_y = -988px
+$icon_arrow_2x_width = 76px
+$icon_arrow_2x_height = 104px
+$icon_arrow_2x_total_width = 1372px
+$icon_arrow_2x_total_height = 1182px
+$icon_arrow_2x_image = 'img/sprite@2x.png'
+$icon_arrow_2x = 568px 988px -568px -988px 76px 104px 1372px 1182px 'img/sprite@2x.png' 'icon-arrow@2x'
+$icon_artwork_1_2x_name = 'icon-artwork-1@2x'
+$icon_artwork_1_2x_x = 0px
+$icon_artwork_1_2x_y = 406px
+$icon_artwork_1_2x_offset_x = 0px
+$icon_artwork_1_2x_offset_y = -406px
+$icon_artwork_1_2x_width = 340px
+$icon_artwork_1_2x_height = 268px
+$icon_artwork_1_2x_total_width = 1372px
+$icon_artwork_1_2x_total_height = 1182px
+$icon_artwork_1_2x_image = 'img/sprite@2x.png'
+$icon_artwork_1_2x = 0px 406px 0px -406px 340px 268px 1372px 1182px 'img/sprite@2x.png' 'icon-artwork-1@2x'
+$icon_artwork_2_2x_name = 'icon-artwork-2@2x'
+$icon_artwork_2_2x_x = 0px
+$icon_artwork_2_2x_y = 694px
+$icon_artwork_2_2x_offset_x = 0px
+$icon_artwork_2_2x_offset_y = -694px
+$icon_artwork_2_2x_width = 308px
+$icon_artwork_2_2x_height = 274px
+$icon_artwork_2_2x_total_width = 1372px
+$icon_artwork_2_2x_total_height = 1182px
+$icon_artwork_2_2x_image = 'img/sprite@2x.png'
+$icon_artwork_2_2x = 0px 694px 0px -694px 308px 274px 1372px 1182px 'img/sprite@2x.png' 'icon-artwork-2@2x'
+$icon_artwork_3_2x_name = 'icon-artwork-3@2x'
+$icon_artwork_3_2x_x = 360px
+$icon_artwork_3_2x_y = 406px
+$icon_artwork_3_2x_offset_x = -360px
+$icon_artwork_3_2x_offset_y = -406px
+$icon_artwork_3_2x_width = 266px
+$icon_artwork_3_2x_height = 258px
+$icon_artwork_3_2x_total_width = 1372px
+$icon_artwork_3_2x_total_height = 1182px
+$icon_artwork_3_2x_image = 'img/sprite@2x.png'
+$icon_artwork_3_2x = 360px 406px -360px -406px 266px 258px 1372px 1182px 'img/sprite@2x.png' 'icon-artwork-3@2x'
+$icon_artwork_4_2x_name = 'icon-artwork-4@2x'
+$icon_artwork_4_2x_x = 0px
+$icon_artwork_4_2x_y = 0px
+$icon_artwork_4_2x_offset_x = 0px
+$icon_artwork_4_2x_offset_y = 0px
+$icon_artwork_4_2x_width = 474px
+$icon_artwork_4_2x_height = 386px
+$icon_artwork_4_2x_total_width = 1372px
+$icon_artwork_4_2x_total_height = 1182px
+$icon_artwork_4_2x_image = 'img/sprite@2x.png'
+$icon_artwork_4_2x = 0px 0px 0px 0px 474px 386px 1372px 1182px 'img/sprite@2x.png' 'icon-artwork-4@2x'
+$icon_book_2x_name = 'icon-book@2x'
+$icon_book_2x_x = 592px
+$icon_book_2x_y = 694px
+$icon_book_2x_offset_x = -592px
+$icon_book_2x_offset_y = -694px
+$icon_book_2x_width = 246px
+$icon_book_2x_height = 136px
+$icon_book_2x_total_width = 1372px
+$icon_book_2x_total_height = 1182px
+$icon_book_2x_image = 'img/sprite@2x.png'
+$icon_book_2x = 592px 694px -592px -694px 246px 136px 1372px 1182px 'img/sprite@2x.png' 'icon-book@2x'
+$icon_camera_2x_name = 'icon-camera@2x'
+$icon_camera_2x_x = 182px
+$icon_camera_2x_y = 988px
+$icon_camera_2x_offset_x = -182px
+$icon_camera_2x_offset_y = -988px
+$icon_camera_2x_width = 164px
+$icon_camera_2x_height = 184px
+$icon_camera_2x_total_width = 1372px
+$icon_camera_2x_total_height = 1182px
+$icon_camera_2x_image = 'img/sprite@2x.png'
+$icon_camera_2x = 182px 988px -182px -988px 164px 184px 1372px 1182px 'img/sprite@2x.png' 'icon-camera@2x'
+$icon_email_2x_name = 'icon-email@2x'
+$icon_email_2x_x = 574px
+$icon_email_2x_y = 904px
+$icon_email_2x_offset_x = -574px
+$icon_email_2x_offset_y = -904px
+$icon_email_2x_width = 56px
+$icon_email_2x_height = 54px
+$icon_email_2x_total_width = 1372px
+$icon_email_2x_total_height = 1182px
+$icon_email_2x_image = 'img/sprite@2x.png'
+$icon_email_2x = 574px 904px -574px -904px 56px 54px 1372px 1182px 'img/sprite@2x.png' 'icon-email@2x'
+$icon_film_2x_name = 'icon-film@2x'
+$icon_film_2x_x = 366px
+$icon_film_2x_y = 988px
+$icon_film_2x_offset_x = -366px
+$icon_film_2x_offset_y = -988px
+$icon_film_2x_width = 182px
+$icon_film_2x_height = 138px
+$icon_film_2x_total_width = 1372px
+$icon_film_2x_total_height = 1182px
+$icon_film_2x_image = 'img/sprite@2x.png'
+$icon_film_2x = 366px 988px -366px -988px 182px 138px 1372px 1182px 'img/sprite@2x.png' 'icon-film@2x'
+$icon_logo_inner_2x_name = 'icon-logo-inner@2x'
+$icon_logo_inner_2x_x = 646px
+$icon_logo_inner_2x_y = 542px
+$icon_logo_inner_2x_offset_x = -646px
+$icon_logo_inner_2x_offset_y = -542px
+$icon_logo_inner_2x_width = 398px
+$icon_logo_inner_2x_height = 90px
+$icon_logo_inner_2x_total_width = 1372px
+$icon_logo_inner_2x_total_height = 1182px
+$icon_logo_inner_2x_image = 'img/sprite@2x.png'
+$icon_logo_inner_2x = 646px 542px -646px -542px 398px 90px 1372px 1182px 'img/sprite@2x.png' 'icon-logo-inner@2x'
+$icon_logo_small_2x_name = 'icon-logo-small@2x'
+$icon_logo_small_2x_x = 646px
+$icon_logo_small_2x_y = 406px
+$icon_logo_small_2x_offset_x = -646px
+$icon_logo_small_2x_offset_y = -406px
+$icon_logo_small_2x_width = 512px
+$icon_logo_small_2x_height = 116px
+$icon_logo_small_2x_total_width = 1372px
+$icon_logo_small_2x_total_height = 1182px
+$icon_logo_small_2x_image = 'img/sprite@2x.png'
+$icon_logo_small_2x = 646px 406px -646px -406px 512px 116px 1372px 1182px 'img/sprite@2x.png' 'icon-logo-small@2x'
+$icon_logo_white_2x_name = 'icon-logo-white@2x'
+$icon_logo_white_2x_x = 494px
+$icon_logo_white_2x_y = 178px
+$icon_logo_white_2x_offset_x = -494px
+$icon_logo_white_2x_offset_y = -178px
+$icon_logo_white_2x_width = 700px
+$icon_logo_white_2x_height = 158px
+$icon_logo_white_2x_total_width = 1372px
+$icon_logo_white_2x_total_height = 1182px
+$icon_logo_white_2x_image = 'img/sprite@2x.png'
+$icon_logo_white_2x = 494px 178px -494px -178px 700px 158px 1372px 1182px 'img/sprite@2x.png' 'icon-logo-white@2x'
+$icon_logo_2x_name = 'icon-logo@2x'
+$icon_logo_2x_x = 494px
+$icon_logo_2x_y = 0px
+$icon_logo_2x_offset_x = -494px
+$icon_logo_2x_offset_y = 0px
+$icon_logo_2x_width = 700px
+$icon_logo_2x_height = 158px
+$icon_logo_2x_total_width = 1372px
+$icon_logo_2x_total_height = 1182px
+$icon_logo_2x_image = 'img/sprite@2x.png'
+$icon_logo_2x = 494px 0px -494px 0px 700px 158px 1372px 1182px 'img/sprite@2x.png' 'icon-logo@2x'
+$icon_next_2x_name = 'icon-next@2x'
+$icon_next_2x_x = 1214px
+$icon_next_2x_y = 408px
+$icon_next_2x_offset_x = -1214px
+$icon_next_2x_offset_y = -408px
+$icon_next_2x_width = 108px
+$icon_next_2x_height = 88px
+$icon_next_2x_total_width = 1372px
+$icon_next_2x_total_height = 1182px
+$icon_next_2x_image = 'img/sprite@2x.png'
+$icon_next_2x = 1214px 408px -1214px -408px 108px 88px 1372px 1182px 'img/sprite@2x.png' 'icon-next@2x'
+$icon_numbers_12_2x_name = 'icon-numbers-12@2x'
+$icon_numbers_12_2x_x = 0px
+$icon_numbers_12_2x_y = 988px
+$icon_numbers_12_2x_offset_x = 0px
+$icon_numbers_12_2x_offset_y = -988px
+$icon_numbers_12_2x_width = 162px
+$icon_numbers_12_2x_height = 194px
+$icon_numbers_12_2x_total_width = 1372px
+$icon_numbers_12_2x_total_height = 1182px
+$icon_numbers_12_2x_image = 'img/sprite@2x.png'
+$icon_numbers_12_2x = 0px 988px 0px -988px 162px 194px 1372px 1182px 'img/sprite@2x.png' 'icon-numbers-12@2x'
+$icon_numbers_18_2x_name = 'icon-numbers-18@2x'
+$icon_numbers_18_2x_x = 1214px
+$icon_numbers_18_2x_y = 0px
+$icon_numbers_18_2x_offset_x = -1214px
+$icon_numbers_18_2x_offset_y = 0px
+$icon_numbers_18_2x_width = 158px
+$icon_numbers_18_2x_height = 196px
+$icon_numbers_18_2x_total_width = 1372px
+$icon_numbers_18_2x_total_height = 1182px
+$icon_numbers_18_2x_image = 'img/sprite@2x.png'
+$icon_numbers_18_2x = 1214px 0px -1214px 0px 158px 196px 1372px 1182px 'img/sprite@2x.png' 'icon-numbers-18@2x'
+$icon_numbers_570_2x_name = 'icon-numbers-570@2x'
+$icon_numbers_570_2x_x = 328px
+$icon_numbers_570_2x_y = 694px
+$icon_numbers_570_2x_offset_x = -328px
+$icon_numbers_570_2x_offset_y = -694px
+$icon_numbers_570_2x_width = 244px
+$icon_numbers_570_2x_height = 190px
+$icon_numbers_570_2x_total_width = 1372px
+$icon_numbers_570_2x_total_height = 1182px
+$icon_numbers_570_2x_image = 'img/sprite@2x.png'
+$icon_numbers_570_2x = 328px 694px -328px -694px 244px 190px 1372px 1182px 'img/sprite@2x.png' 'icon-numbers-570@2x'
+$icon_numbers_7_2x_name = 'icon-numbers-7@2x'
+$icon_numbers_7_2x_x = 1214px
+$icon_numbers_7_2x_y = 216px
+$icon_numbers_7_2x_offset_x = -1214px
+$icon_numbers_7_2x_offset_y = -216px
+$icon_numbers_7_2x_width = 84px
+$icon_numbers_7_2x_height = 172px
+$icon_numbers_7_2x_total_width = 1372px
+$icon_numbers_7_2x_total_height = 1182px
+$icon_numbers_7_2x_image = 'img/sprite@2x.png'
+$icon_numbers_7_2x = 1214px 216px -1214px -216px 84px 172px 1372px 1182px 'img/sprite@2x.png' 'icon-numbers-7@2x'
+$icon_owl_dot_active_2x_name = 'icon-owl-dot-active@2x'
+$icon_owl_dot_active_2x_x = 1318px
+$icon_owl_dot_active_2x_y = 264px
+$icon_owl_dot_active_2x_offset_x = -1318px
+$icon_owl_dot_active_2x_offset_y = -264px
+$icon_owl_dot_active_2x_width = 28px
+$icon_owl_dot_active_2x_height = 28px
+$icon_owl_dot_active_2x_total_width = 1372px
+$icon_owl_dot_active_2x_total_height = 1182px
+$icon_owl_dot_active_2x_image = 'img/sprite@2x.png'
+$icon_owl_dot_active_2x = 1318px 264px -1318px -264px 28px 28px 1372px 1182px 'img/sprite@2x.png' 'icon-owl-dot-active@2x'
+$icon_owl_dot_2x_name = 'icon-owl-dot@2x'
+$icon_owl_dot_2x_x = 1318px
+$icon_owl_dot_2x_y = 216px
+$icon_owl_dot_2x_offset_x = -1318px
+$icon_owl_dot_2x_offset_y = -216px
+$icon_owl_dot_2x_width = 28px
+$icon_owl_dot_2x_height = 28px
+$icon_owl_dot_2x_total_width = 1372px
+$icon_owl_dot_2x_total_height = 1182px
+$icon_owl_dot_2x_image = 'img/sprite@2x.png'
+$icon_owl_dot_2x = 1318px 216px -1318px -216px 28px 28px 1372px 1182px 'img/sprite@2x.png' 'icon-owl-dot@2x'
+$icon_phone_2x_name = 'icon-phone@2x'
+$icon_phone_2x_x = 1078px
+$icon_phone_2x_y = 694px
+$icon_phone_2x_offset_x = -1078px
+$icon_phone_2x_offset_y = -694px
+$icon_phone_2x_width = 70px
+$icon_phone_2x_height = 70px
+$icon_phone_2x_total_width = 1372px
+$icon_phone_2x_total_height = 1182px
+$icon_phone_2x_image = 'img/sprite@2x.png'
+$icon_phone_2x = 1078px 694px -1078px -694px 70px 70px 1372px 1182px 'img/sprite@2x.png' 'icon-phone@2x'
+$icon_play_videoback_hover_2x_name = 'icon-play-videoback-hover@2x'
+$icon_play_videoback_hover_2x_x = 412px
+$icon_play_videoback_hover_2x_y = 904px
+$icon_play_videoback_hover_2x_offset_x = -412px
+$icon_play_videoback_hover_2x_offset_y = -904px
+$icon_play_videoback_hover_2x_width = 64px
+$icon_play_videoback_hover_2x_height = 62px
+$icon_play_videoback_hover_2x_total_width = 1372px
+$icon_play_videoback_hover_2x_total_height = 1182px
+$icon_play_videoback_hover_2x_image = 'img/sprite@2x.png'
+$icon_play_videoback_hover_2x = 412px 904px -412px -904px 64px 62px 1372px 1182px 'img/sprite@2x.png' 'icon-play-videoback-hover@2x'
+$icon_play_videoback_2x_name = 'icon-play-videoback@2x'
+$icon_play_videoback_2x_x = 328px
+$icon_play_videoback_2x_y = 904px
+$icon_play_videoback_2x_offset_x = -328px
+$icon_play_videoback_2x_offset_y = -904px
+$icon_play_videoback_2x_width = 64px
+$icon_play_videoback_2x_height = 62px
+$icon_play_videoback_2x_total_width = 1372px
+$icon_play_videoback_2x_total_height = 1182px
+$icon_play_videoback_2x_image = 'img/sprite@2x.png'
+$icon_play_videoback_2x = 328px 904px -328px -904px 64px 62px 1372px 1182px 'img/sprite@2x.png' 'icon-play-videoback@2x'
+$icon_prev_2x_name = 'icon-prev@2x'
+$icon_prev_2x_x = 1214px
+$icon_prev_2x_y = 516px
+$icon_prev_2x_offset_x = -1214px
+$icon_prev_2x_offset_y = -516px
+$icon_prev_2x_width = 108px
+$icon_prev_2x_height = 88px
+$icon_prev_2x_total_width = 1372px
+$icon_prev_2x_total_height = 1182px
+$icon_prev_2x_image = 'img/sprite@2x.png'
+$icon_prev_2x = 1214px 516px -1214px -516px 108px 88px 1372px 1182px 'img/sprite@2x.png' 'icon-prev@2x'
+$icon_radio_checked_2x_name = 'icon-radio-checked@2x'
+$icon_radio_checked_2x_x = 1318px
+$icon_radio_checked_2x_y = 358px
+$icon_radio_checked_2x_offset_x = -1318px
+$icon_radio_checked_2x_offset_y = -358px
+$icon_radio_checked_2x_width = 26px
+$icon_radio_checked_2x_height = 26px
+$icon_radio_checked_2x_total_width = 1372px
+$icon_radio_checked_2x_total_height = 1182px
+$icon_radio_checked_2x_image = 'img/sprite@2x.png'
+$icon_radio_checked_2x = 1318px 358px -1318px -358px 26px 26px 1372px 1182px 'img/sprite@2x.png' 'icon-radio-checked@2x'
+$icon_radio_2x_name = 'icon-radio@2x'
+$icon_radio_2x_x = 1318px
+$icon_radio_2x_y = 312px
+$icon_radio_2x_offset_x = -1318px
+$icon_radio_2x_offset_y = -312px
+$icon_radio_2x_width = 26px
+$icon_radio_2x_height = 26px
+$icon_radio_2x_total_width = 1372px
+$icon_radio_2x_total_height = 1182px
+$icon_radio_2x_image = 'img/sprite@2x.png'
+$icon_radio_2x = 1318px 312px -1318px -312px 26px 26px 1372px 1182px 'img/sprite@2x.png' 'icon-radio@2x'
+$icon_skype_2x_name = 'icon-skype@2x'
+$icon_skype_2x_x = 496px
+$icon_skype_2x_y = 904px
+$icon_skype_2x_offset_x = -496px
+$icon_skype_2x_offset_y = -904px
+$icon_skype_2x_width = 58px
+$icon_skype_2x_height = 58px
+$icon_skype_2x_total_width = 1372px
+$icon_skype_2x_total_height = 1182px
+$icon_skype_2x_image = 'img/sprite@2x.png'
+$icon_skype_2x = 496px 904px -496px -904px 58px 58px 1372px 1182px 'img/sprite@2x.png' 'icon-skype@2x'
+$icon_social_fb_hover_2x_name = 'icon-social-fb-hover@2x'
+$icon_social_fb_hover_2x_x = 968px
+$icon_social_fb_hover_2x_y = 694px
+$icon_social_fb_hover_2x_offset_x = -968px
+$icon_social_fb_hover_2x_offset_y = -694px
+$icon_social_fb_hover_2x_width = 90px
+$icon_social_fb_hover_2x_height = 90px
+$icon_social_fb_hover_2x_total_width = 1372px
+$icon_social_fb_hover_2x_total_height = 1182px
+$icon_social_fb_hover_2x_image = 'img/sprite@2x.png'
+$icon_social_fb_hover_2x = 968px 694px -968px -694px 90px 90px 1372px 1182px 'img/sprite@2x.png' 'icon-social-fb-hover@2x'
+$icon_social_fb_2x_name = 'icon-social-fb@2x'
+$icon_social_fb_2x_x = 1064px
+$icon_social_fb_2x_y = 542px
+$icon_social_fb_2x_offset_x = -1064px
+$icon_social_fb_2x_offset_y = -542px
+$icon_social_fb_2x_width = 90px
+$icon_social_fb_2x_height = 90px
+$icon_social_fb_2x_total_width = 1372px
+$icon_social_fb_2x_total_height = 1182px
+$icon_social_fb_2x_image = 'img/sprite@2x.png'
+$icon_social_fb_2x = 1064px 542px -1064px -542px 90px 90px 1372px 1182px 'img/sprite@2x.png' 'icon-social-fb@2x'
+$icon_social_ok_hover_2x_name = 'icon-social-ok-hover@2x'
+$icon_social_ok_hover_2x_x = 1214px
+$icon_social_ok_hover_2x_y = 1064px
+$icon_social_ok_hover_2x_offset_x = -1214px
+$icon_social_ok_hover_2x_offset_y = -1064px
+$icon_social_ok_hover_2x_width = 90px
+$icon_social_ok_hover_2x_height = 90px
+$icon_social_ok_hover_2x_total_width = 1372px
+$icon_social_ok_hover_2x_total_height = 1182px
+$icon_social_ok_hover_2x_image = 'img/sprite@2x.png'
+$icon_social_ok_hover_2x = 1214px 1064px -1214px -1064px 90px 90px 1372px 1182px 'img/sprite@2x.png' 'icon-social-ok-hover@2x'
+$icon_social_ok_2x_name = 'icon-social-ok@2x'
+$icon_social_ok_2x_x = 1214px
+$icon_social_ok_2x_y = 954px
+$icon_social_ok_2x_offset_x = -1214px
+$icon_social_ok_2x_offset_y = -954px
+$icon_social_ok_2x_width = 90px
+$icon_social_ok_2x_height = 90px
+$icon_social_ok_2x_total_width = 1372px
+$icon_social_ok_2x_total_height = 1182px
+$icon_social_ok_2x_image = 'img/sprite@2x.png'
+$icon_social_ok_2x = 1214px 954px -1214px -954px 90px 90px 1372px 1182px 'img/sprite@2x.png' 'icon-social-ok@2x'
+$icon_social_vk_hover_2x_name = 'icon-social-vk-hover@2x'
+$icon_social_vk_hover_2x_x = 1214px
+$icon_social_vk_hover_2x_y = 844px
+$icon_social_vk_hover_2x_offset_x = -1214px
+$icon_social_vk_hover_2x_offset_y = -844px
+$icon_social_vk_hover_2x_width = 90px
+$icon_social_vk_hover_2x_height = 90px
+$icon_social_vk_hover_2x_total_width = 1372px
+$icon_social_vk_hover_2x_total_height = 1182px
+$icon_social_vk_hover_2x_image = 'img/sprite@2x.png'
+$icon_social_vk_hover_2x = 1214px 844px -1214px -844px 90px 90px 1372px 1182px 'img/sprite@2x.png' 'icon-social-vk-hover@2x'
+$icon_social_vk_2x_name = 'icon-social-vk@2x'
+$icon_social_vk_2x_x = 1214px
+$icon_social_vk_2x_y = 734px
+$icon_social_vk_2x_offset_x = -1214px
+$icon_social_vk_2x_offset_y = -734px
+$icon_social_vk_2x_width = 90px
+$icon_social_vk_2x_height = 90px
+$icon_social_vk_2x_total_width = 1372px
+$icon_social_vk_2x_total_height = 1182px
+$icon_social_vk_2x_image = 'img/sprite@2x.png'
+$icon_social_vk_2x = 1214px 734px -1214px -734px 90px 90px 1372px 1182px 'img/sprite@2x.png' 'icon-social-vk@2x'
+$icon_social_yt_hover_2x_name = 'icon-social-yt-hover@2x'
+$icon_social_yt_hover_2x_x = 1214px
+$icon_social_yt_hover_2x_y = 624px
+$icon_social_yt_hover_2x_offset_x = -1214px
+$icon_social_yt_hover_2x_offset_y = -624px
+$icon_social_yt_hover_2x_width = 90px
+$icon_social_yt_hover_2x_height = 90px
+$icon_social_yt_hover_2x_total_width = 1372px
+$icon_social_yt_hover_2x_total_height = 1182px
+$icon_social_yt_hover_2x_image = 'img/sprite@2x.png'
+$icon_social_yt_hover_2x = 1214px 624px -1214px -624px 90px 90px 1372px 1182px 'img/sprite@2x.png' 'icon-social-yt-hover@2x'
+$icon_social_yt_2x_name = 'icon-social-yt@2x'
+$icon_social_yt_2x_x = 858px
+$icon_social_yt_2x_y = 694px
+$icon_social_yt_2x_offset_x = -858px
+$icon_social_yt_2x_offset_y = -694px
+$icon_social_yt_2x_width = 90px
+$icon_social_yt_2x_height = 90px
+$icon_social_yt_2x_total_width = 1372px
+$icon_social_yt_2x_total_height = 1182px
+$icon_social_yt_2x_image = 'img/sprite@2x.png'
+$icon_social_yt_2x = 858px 694px -858px -694px 90px 90px 1372px 1182px 'img/sprite@2x.png' 'icon-social-yt@2x'
+$spritesheet_width = 686px;
+$spritesheet_height = 591px;
+$spritesheet_image = 'img/sprite.png';
+$spritesheet_sprites = $icon_arrow $icon_artwork_1 $icon_artwork_2 $icon_artwork_3 $icon_artwork_4 $icon_book $icon_camera $icon_email $icon_film $icon_logo_inner $icon_logo_small $icon_logo_white $icon_logo $icon_next $icon_numbers_12 $icon_numbers_18 $icon_numbers_570 $icon_numbers_7 $icon_owl_dot_active $icon_owl_dot $icon_phone $icon_play_videoback_hover $icon_play_videoback $icon_prev $icon_radio_checked $icon_radio $icon_skype $icon_social_fb_hover $icon_social_fb $icon_social_ok_hover $icon_social_ok $icon_social_vk_hover $icon_social_vk $icon_social_yt_hover $icon_social_yt;
+$spritesheet = 686px 591px 'img/sprite.png' $spritesheet_sprites;
+$retina_spritesheet_width = 1372px
+$retina_spritesheet_height = 1182px
+$retina_spritesheet_image = 'img/sprite@2x.png'
+$retina_spritesheet_sprites = $icon_arrow_2x $icon_artwork_1_2x $icon_artwork_2_2x $icon_artwork_3_2x $icon_artwork_4_2x $icon_book_2x $icon_camera_2x $icon_email_2x $icon_film_2x $icon_logo_inner_2x $icon_logo_small_2x $icon_logo_white_2x $icon_logo_2x $icon_next_2x $icon_numbers_12_2x $icon_numbers_18_2x $icon_numbers_570_2x $icon_numbers_7_2x $icon_owl_dot_active_2x $icon_owl_dot_2x $icon_phone_2x $icon_play_videoback_hover_2x $icon_play_videoback_2x $icon_prev_2x $icon_radio_checked_2x $icon_radio_2x $icon_skype_2x $icon_social_fb_hover_2x $icon_social_fb_2x $icon_social_ok_hover_2x $icon_social_ok_2x $icon_social_vk_hover_2x $icon_social_vk_2x $icon_social_yt_hover_2x $icon_social_yt_2x
+$retina_spritesheet = 1372px 1182px 'img/sprite@2x.png' $retina_spritesheet_sprites
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+// The list formatted variables are intended for mixins like `retinaSprite` and `retinaSprites`.
+
+$icon_arrow_group_name = 'icon-arrow'
+$icon_arrow_group = 'icon-arrow' $icon_arrow $icon_arrow_2x
+$icon_artwork_1_group_name = 'icon-artwork-1'
+$icon_artwork_1_group = 'icon-artwork-1' $icon_artwork_1 $icon_artwork_1_2x
+$icon_artwork_2_group_name = 'icon-artwork-2'
+$icon_artwork_2_group = 'icon-artwork-2' $icon_artwork_2 $icon_artwork_2_2x
+$icon_artwork_3_group_name = 'icon-artwork-3'
+$icon_artwork_3_group = 'icon-artwork-3' $icon_artwork_3 $icon_artwork_3_2x
+$icon_artwork_4_group_name = 'icon-artwork-4'
+$icon_artwork_4_group = 'icon-artwork-4' $icon_artwork_4 $icon_artwork_4_2x
+$icon_book_group_name = 'icon-book'
+$icon_book_group = 'icon-book' $icon_book $icon_book_2x
+$icon_camera_group_name = 'icon-camera'
+$icon_camera_group = 'icon-camera' $icon_camera $icon_camera_2x
+$icon_email_group_name = 'icon-email'
+$icon_email_group = 'icon-email' $icon_email $icon_email_2x
+$icon_film_group_name = 'icon-film'
+$icon_film_group = 'icon-film' $icon_film $icon_film_2x
+$icon_logo_inner_group_name = 'icon-logo-inner'
+$icon_logo_inner_group = 'icon-logo-inner' $icon_logo_inner $icon_logo_inner_2x
+$icon_logo_small_group_name = 'icon-logo-small'
+$icon_logo_small_group = 'icon-logo-small' $icon_logo_small $icon_logo_small_2x
+$icon_logo_white_group_name = 'icon-logo-white'
+$icon_logo_white_group = 'icon-logo-white' $icon_logo_white $icon_logo_white_2x
+$icon_logo_group_name = 'icon-logo'
+$icon_logo_group = 'icon-logo' $icon_logo $icon_logo_2x
+$icon_next_group_name = 'icon-next'
+$icon_next_group = 'icon-next' $icon_next $icon_next_2x
+$icon_numbers_12_group_name = 'icon-numbers-12'
+$icon_numbers_12_group = 'icon-numbers-12' $icon_numbers_12 $icon_numbers_12_2x
+$icon_numbers_18_group_name = 'icon-numbers-18'
+$icon_numbers_18_group = 'icon-numbers-18' $icon_numbers_18 $icon_numbers_18_2x
+$icon_numbers_570_group_name = 'icon-numbers-570'
+$icon_numbers_570_group = 'icon-numbers-570' $icon_numbers_570 $icon_numbers_570_2x
+$icon_numbers_7_group_name = 'icon-numbers-7'
+$icon_numbers_7_group = 'icon-numbers-7' $icon_numbers_7 $icon_numbers_7_2x
+$icon_owl_dot_active_group_name = 'icon-owl-dot-active'
+$icon_owl_dot_active_group = 'icon-owl-dot-active' $icon_owl_dot_active $icon_owl_dot_active_2x
+$icon_owl_dot_group_name = 'icon-owl-dot'
+$icon_owl_dot_group = 'icon-owl-dot' $icon_owl_dot $icon_owl_dot_2x
+$icon_phone_group_name = 'icon-phone'
+$icon_phone_group = 'icon-phone' $icon_phone $icon_phone_2x
+$icon_play_videoback_hover_group_name = 'icon-play-videoback-hover'
+$icon_play_videoback_hover_group = 'icon-play-videoback-hover' $icon_play_videoback_hover $icon_play_videoback_hover_2x
+$icon_play_videoback_group_name = 'icon-play-videoback'
+$icon_play_videoback_group = 'icon-play-videoback' $icon_play_videoback $icon_play_videoback_2x
+$icon_prev_group_name = 'icon-prev'
+$icon_prev_group = 'icon-prev' $icon_prev $icon_prev_2x
+$icon_radio_checked_group_name = 'icon-radio-checked'
+$icon_radio_checked_group = 'icon-radio-checked' $icon_radio_checked $icon_radio_checked_2x
+$icon_radio_group_name = 'icon-radio'
+$icon_radio_group = 'icon-radio' $icon_radio $icon_radio_2x
+$icon_skype_group_name = 'icon-skype'
+$icon_skype_group = 'icon-skype' $icon_skype $icon_skype_2x
+$icon_social_fb_hover_group_name = 'icon-social-fb-hover'
+$icon_social_fb_hover_group = 'icon-social-fb-hover' $icon_social_fb_hover $icon_social_fb_hover_2x
+$icon_social_fb_group_name = 'icon-social-fb'
+$icon_social_fb_group = 'icon-social-fb' $icon_social_fb $icon_social_fb_2x
+$icon_social_ok_hover_group_name = 'icon-social-ok-hover'
+$icon_social_ok_hover_group = 'icon-social-ok-hover' $icon_social_ok_hover $icon_social_ok_hover_2x
+$icon_social_ok_group_name = 'icon-social-ok'
+$icon_social_ok_group = 'icon-social-ok' $icon_social_ok $icon_social_ok_2x
+$icon_social_vk_hover_group_name = 'icon-social-vk-hover'
+$icon_social_vk_hover_group = 'icon-social-vk-hover' $icon_social_vk_hover $icon_social_vk_hover_2x
+$icon_social_vk_group_name = 'icon-social-vk'
+$icon_social_vk_group = 'icon-social-vk' $icon_social_vk $icon_social_vk_2x
+$icon_social_yt_hover_group_name = 'icon-social-yt-hover'
+$icon_social_yt_hover_group = 'icon-social-yt-hover' $icon_social_yt_hover $icon_social_yt_hover_2x
+$icon_social_yt_group_name = 'icon-social-yt'
+$icon_social_yt_group = 'icon-social-yt' $icon_social_yt $icon_social_yt_2x
+$retina_groups = $icon_arrow_group $icon_artwork_1_group $icon_artwork_2_group $icon_artwork_3_group $icon_artwork_4_group $icon_book_group $icon_camera_group $icon_email_group $icon_film_group $icon_logo_inner_group $icon_logo_small_group $icon_logo_white_group $icon_logo_group $icon_next_group $icon_numbers_12_group $icon_numbers_18_group $icon_numbers_570_group $icon_numbers_7_group $icon_owl_dot_active_group $icon_owl_dot_group $icon_phone_group $icon_play_videoback_hover_group $icon_play_videoback_group $icon_prev_group $icon_radio_checked_group $icon_radio_group $icon_skype_group $icon_social_fb_hover_group $icon_social_fb_group $icon_social_ok_hover_group $icon_social_ok_group $icon_social_vk_hover_group $icon_social_vk_group $icon_social_yt_hover_group $icon_social_yt_group
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  spriteWidth($icon_home)
+}
+
+.icon-email {
+  sprite($icon_email)
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+spriteWidth($sprite) {
+  width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+  height: $sprite[5];
+}
+
+spritePosition($sprite) {
+  background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sprite($sprite) {
+  spriteImage($sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}
+
+
+// The `retinaSprite` mixin sets up rules and a media query for a sprite/retina sprite.
+// It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon_home_group = 'icon-home' $icon_home $icon_home_2x;
+//
+// .icon-home {
+// 	retinaSprite($icon_home_group)
+// }
+
+
+spriteBackgroundSize($sprite) {
+	background-size $sprite[6] $sprite[7]
+}
+
+retinaSprite($retina_group) {
+	$normal_sprite = $retina_group[1]
+	$retina_sprite = $retina_group[2]
+	sprite($normal_sprite)
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+				 (min-resolution: 192dpi) {
+		spriteImage($retina_sprite)
+		spriteBackgroundSize($normal_sprite)
+	}
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of Stylus
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+sprites($spritesheet_sprites);
+*/
+sprites($sprites) {
+  for $sprite in $sprites {
+    $sprite_name = $sprite[9];
+    .{$sprite_name} {
+      sprite($sprite);
+    }
+  }
+}
+
+// The `retinaSprites` mixin generates a CSS rule and media query for retina groups
+// This yields the same output as CSS retina template but can be overridden in Stylus
+//
+// retinaSprites($retina_groups)
+
+retinaSprites($retina_groups) {
+	for $retina_group in $retina_groups {
+		$sprite_name = $retina_group[0];
+		.{$sprite_name} {
+			retinaSprite $retina_group
+		}
+	}
+}

@@ -1,0 +1,29 @@
+include ../hole/hole
+
+mixin about()
+    section.about&attributes(attributes)
+        .about__in
+            +hole-1()
+            +hole-2()
+            +hole-3()
+            .about__logo(title="Horizon")
+            p.about__about Профессиональная <br><strong>видеосъемка для бизнеса</strong>
+            h2.about__title О компании
+            .a-slider.about__slider
+                .a-slider__slide.a-slider__slide--1
+                    p.a-slider__text <strong>Horizon</strong> - компания была <br>основана в 2009 году, начав оказывать <br>профессиональную видеосъемку <br>для бизнеса.
+                .a-slider__slide.a-slider__slide--2
+                    .a-slider__box.a-slider__box--1
+                        .a-slider__box-title Акцент
+                        .a-slider__box-txt В создаваемых видеороликах  акцентируем внимание на деталях, которые имеют наибольшую ценность для целевой аудитории
+                    .a-slider__box.a-slider__box--2
+                        .a-slider__box-title Опыт
+                        .a-slider__box-txt За 7 лет работы выполнено более... проектов, сформирована полноценная команда для создания видеоролика, прошли 12 треннингов у ведущих видеооператоров России и СНГ
+                .a-slider__slide.a-slider__slide--3
+                    h3.a-slider__numbers-title Цифры
+                    .a-slider__numbers
+                        .a-slider__number.a-slider__number--1 <span>7</span> лет работаем <br>в сфере <br>видеопроизводства
+                        .a-slider__number.a-slider__number--2 <span>570</span> роликов было <br>снято на момент <br>разработки сайта
+                        .a-slider__number.a-slider__number--3 <span>18</span> человек <br>в команде
+                        .a-slider__number.a-slider__number--4 <span>12</span> работ <br>за пределами <br>России
+

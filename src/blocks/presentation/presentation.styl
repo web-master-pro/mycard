@@ -1,0 +1,107 @@
+.presentation
+    padding 0
+    &__in
+        container(1180px)
+        padding 180px 20px 120px
+        position relative
+        z-index 300
+        +above(520px)
+            padding 180px 20px 300px
+        &::after
+            content ""
+            retinaSprite($icon_artwork_2_group)
+            position absolute
+            bottom 0
+            left 50%
+            margin-left -80px
+            +above(520px)
+                bottom 90px
+                margin-left -100px
+
+    &__title
+        color #44afdd
+        font(Bold)
+        font-size 24px
+        line-height 1
+        text-transform uppercase
+        text-align center
+        margin 0 0 40px
+        +above(520px)
+            font-size 28px
+        +above(1000px)
+            margin 0 0 90px
+
+    &__text
+        color #3b3b3b
+        font(Bold)
+        font-size 20px
+        line-height 1.2
+        text-transform uppercase
+        text-align center
+        margin 0 0 50px
+        strong
+            font(Heavy)
+        +above(520px)
+            font-size 24px
+
+    &__button-block
+        display block
+        width 100%
+        max-width 364px
+        position relative
+        margin 0 auto 75px
+
+    &__arrow
+        retinaSprite($icon_arrow_group)
+        position absolute
+        top -20px
+        left -60px
+        animation arrow-btn 4s ease 3s infinite normal
+        transform-origin left top
+        display none
+        +above(520px)
+            display block
+
+    &__button
+        display block
+        width 100%
+        max-width 310px
+        background-color #2d98cd
+        background-image linear-gradient(to top, #81bce6 0%, #81bce6 100%)
+        border-radius 5px
+        border none
+        outline none
+        color #fefefe
+        font(Extra)
+        font-size 16px
+        line-height 1
+        padding 15px
+        text-transform uppercase
+        text-align center
+        text-decoration none
+        margin 0 auto
+        &:hover
+            color @color
+            background-image linear-gradient(to top, #3b97d7 0%, #4dc8e2 100%)
+            text-decoration none
+        +above(400px)
+            font-size 20px
+        +above(520px)
+            font-size 24px
+            border-radius 10px
+            padding 21px
+            max-width 364px
+
+
+
+@keyframes arrow-btn
+    0%
+        transform translate(0,0) rotate(0deg) scale(1,1)
+    7%
+        transform translate(0,2px) rotate(-10deg) scale(1.05,1.1)
+    14%
+        transform translate(0,0) rotate(0deg) scale(1,1)
+    21%
+        transform translate(0,4px) rotate(-10deg) scale(1.1,1.1)
+    28%
+        transform translate(0,0) rotate(0deg) scale(1,1)

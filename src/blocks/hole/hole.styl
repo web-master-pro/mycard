@@ -1,0 +1,88 @@
+.hole
+    overflow hidden
+    &--1
+        position absolute
+        top 0
+        left 0
+        display none
+        +above(800px)
+            display block
+        +above(1100px)
+            top 30px
+            left 195px
+    &--2
+        position absolute
+        top 0
+        right 0
+        display none
+        +above(850px)
+            display block
+        +above(1100px)
+            top 0
+            right 70px
+    &--3
+        position absolute
+        display none
+        +above(768px)
+            display block
+            right 0
+            bottom 20px
+        +above(1000px)
+            right 135px
+            bottom 55px
+    &--4
+        position absolute
+        top 0
+        left 50%
+        margin-left -135px
+        +above(1000px)
+            top 0
+            left 0
+            margin 0
+    &--5
+        position absolute
+        display none
+        +above(992px)
+            display block
+            top 420px
+            right 0
+    &--6
+        position absolute
+        display block
+        top 0px
+        left 50%
+        margin-left -112px
+        +above(992px)
+            top 125px
+            left auto
+            right 80px
+            margin-left 0
+    &--7
+        position absolute
+        display block
+        bottom 0
+        left 50%
+        margin-left -107px
+        +above(992px)
+            bottom 50px
+            left 200px
+            margin-left 0
+
+    &__img
+        display block
+        position relative
+        margin 0
+        // ^[0]--1 &
+        //     top -277px
+        // ^[0]--2 &
+        //     top -107px
+        // ^[0]--3 &
+        //     top -117px
+        // ^[0]--4 &
+        //     top -143px
+        // ^[0]--5 &
+        //     top -250px
+        // ^[0]--6 &
+        //     top -123px
+        // ^[0]--7 &
+        //     top -188px

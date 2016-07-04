@@ -1,0 +1,153 @@
+.team
+    &__in
+        container(1180px)
+        padding 20px 10px 80px
+        +above(1000px)
+            padding 100px 20px 90px
+
+    &__title
+        color #44afdd
+        font(Bold)
+        font-size 28px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        margin 0 0 40px
+
+.t-slider
+    display block
+    position relative
+    margin 0 auto
+    width 280px
+    +above(430px)
+        width 300px
+    +above(650px)
+        width 445px
+    +above(1000px)
+        width 770px
+    +above(1180px)
+        width 900px
+
+    &__slide
+        display block
+        // min-height 450px
+        text-align center
+        position relative
+        &--1
+            min-height 450px
+            &::before
+                display none
+                +above(1000px)
+                    display block
+                    content ""
+                    retinaSprite($icon_artwork_4_group)
+                    position absolute
+                    bottom 0px
+                    left 50%
+                    margin-left -120px
+            &::after
+                display none
+                +above(1180px)
+                    display block
+                    content ""
+                    width 223px
+                    height 154px
+                    background url(img/team-coffee.jpg) no-repeat 0 0
+                    position absolute
+                    top 80px
+                    right 20px
+        &--2
+            padding 0
+        &--3
+            padding 0
+
+    .owl-prev
+        display none !important
+
+    .owl-next
+        display none
+        width 54px
+        position absolute
+        top 30%
+        right -60px
+        padding-top 55px
+        color #646567
+        font()
+        font-size 16px
+        line-height 1
+        cursor pointer
+        transition transform .3s ease
+        &::before
+            content ""
+            retinaSprite($icon_next_group)
+            position absolute
+            top 0
+            left 0
+        &:hover
+            transform translateX(4px)
+        +above(992px)
+            display block
+        +below(991px)
+            display none !important
+    .owl-dots
+        display block
+        position absolute
+        bottom -30px
+        left 0
+        right 0
+        text-align center
+        font-size 0
+        +above(992px)
+            display none !important
+
+    .owl-dot
+        retinaSprite($icon_owl_dot_group)
+        display inline-block
+        vertical-align middle
+        margin 0 7px 15px
+        cursor pointer
+        &.active
+        &:hover
+            retinaSprite($icon_owl_dot_active_group)
+
+    &__photo
+        display block
+        max-width 100%
+        margin 0 auto 30px
+        +above(1000px)
+            margin 0
+
+
+    &__descr
+        display block
+        margin 0 auto
+        padding-bottom 20px
+        +above(1000px)
+            position absolute
+            top 30px
+            left 280px
+            max-width 360px
+            ^[0]__slide--3 &
+                left 380px
+            ^[0]__slide--5 &
+                left 330px
+        +above(1180px)
+            max-width 400px
+            ^[0]__slide--1 &
+                max-width 355px
+            ^[0]__slide--5 &
+                max-width 450px
+
+
+    &__txt
+        color #3b3b3b
+        font()
+        font-size 16px
+        line-height 1.2
+        text-align center
+        margin 0 0 20px
+
+        span
+            color #44afdd
+            font(Bold)
+

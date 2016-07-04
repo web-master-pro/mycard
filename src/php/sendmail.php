@@ -86,12 +86,15 @@
     $mail->ClearReplyTos();
 
 
-    $mail->isSMTP();
-    $mail->Host         = $smtp_host;
-    $mail->SMTPAuth     = false;
-    $mail->Username     = $smtp_user;
-    $mail->Password     = $smtp_password;
-    $mail->Port         = $smtp_port;
+    // $mail->isSMTP();
+    // $mail->Host         = $smtp_host;
+    // $mail->SMTPAuth     = false;
+    // $mail->Username     = $smtp_user;
+    // $mail->Password     = $smtp_password;
+    // $mail->Port         = $smtp_port;
+
+    $mail->isSendmail();
+
     $mail->From         = $from_email;
     // $mail->AddReplyTo($from_email);
     $mail->AddAddress($to_email);

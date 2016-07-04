@@ -1885,8 +1885,8 @@ input,
 
 .volume {
     position: absolute;
+    top: 40px;
     right: 0;
-    bottom: 20px;
     left: 0;
     display: block;
     height: 60px;

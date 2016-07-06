@@ -1,16 +1,11 @@
 <?php
 
-    // ini_set('error_reporting', E_ALL);
-    // ini_set('display_errors', 1);
-    // ini_set('display_startup_errors', 1);
-
-
     // НАСТРОЙКИ получателя/отправителя
-    $to_email       = "mail@web-master-pro.ru"; // "t.studio@mail.ru";Email получателя отчетов, например: 'admin@mysite.ru'
-    $to_name        = "Тимур Салихов";                    // Имя получателя отчетов, например: 'Иван Петров'
-    $from_email     = "info@mycard.ru";               // Email отправителя, например: 'noreply@mysite.ru'
-    $from_name      = "VideoHappy";                       // Имя, от которого отправляются отчеты, например: 'Мой Сайт'
-    $subject        = "[mycard.ru]";                  // Название сайта в квадратных скобках для подстановки в тему письма префиксом
+    $to_email       = "t.studio@mail.ru";        // Email получателя отчетов, например: 'admin@mysite.ru'
+    $to_name        = "Тимур Салихов";           // Имя получателя отчетов, например: 'Иван Петров'
+    $from_email     = "info@mycard.ru";          // Email отправителя, например: 'noreply@mysite.ru'
+    $from_name      = "MyCard.tv";               // Имя, от которого отправляются отчеты, например: 'Мой Сайт'
+    $subject        = "[mycard.tv]";             // Название сайта в квадратных скобках для подстановки в тему письма префиксом
 
     $smtp_user      = "info@videohappy.ru";
     $smtp_password  = "TKjYih5H";
@@ -27,7 +22,7 @@
 
     $data["form"]       = strtolower(strip_tags($_REQUEST['form']));
     $data["name"]       = strip_tags($_REQUEST['name']);
-    $data["mail"]      = strip_tags($_REQUEST['email']);
+    $data["mail"]       = strip_tags($_REQUEST['email']);
     $data["phone"]      = strip_tags($_REQUEST['phone']);
     $data["message"]    = strip_tags($_REQUEST['message']);
     $data["theme"]      = strip_tags($_REQUEST['theme']);
@@ -68,8 +63,7 @@
 
     // $result = @mail($to_email, $subject, $message, $headers);
 
-    define('TPL', $_SERVER['DOCUMENT_ROOT'] . "/dev/mycard/assets/phpmailer/");
-    // define('TPL', $_SERVER['DOCUMENT_ROOT'] . "/assets/phpmailer/");
+    define('TPL', $_SERVER['DOCUMENT_ROOT'] . "/assets/phpmailer/");
 
     global $mail;
     if ( !is_object( $mail ) || !is_a( $mail, 'PHPMailer' ) ) {
@@ -86,14 +80,14 @@
     $mail->ClearReplyTos();
 
 
-    // $mail->isSMTP();
-    // $mail->Host         = $smtp_host;
-    // $mail->SMTPAuth     = false;
-    // $mail->Username     = $smtp_user;
-    // $mail->Password     = $smtp_password;
-    // $mail->Port         = $smtp_port;
+    $mail->isSMTP();
+    $mail->Host         = $smtp_host;
+    $mail->SMTPAuth     = false;
+    $mail->Username     = $smtp_user;
+    $mail->Password     = $smtp_password;
+    $mail->Port         = $smtp_port;
 
-    $mail->isSendmail();
+    // $mail->isSendmail();
 
     $mail->From         = $from_email;
     // $mail->AddReplyTo($from_email);
@@ -106,7 +100,7 @@
     $mail->Send();
 
     if ($send_sms) {
-        $sms_message =  "Заявка с videohappy.ru: "+ $data["name"] + ", " + $data["phone"];
+        $sms_message =  "Заявка с mycard.tv: "+ $data["name"] + ", " + $data["phone"];
         $body = file_get_contents("http://sms.ru/sms/send?api_id=".$sms_api_id."&to=".$sms_phone."&text=".urlencode(iconv("utf-8","utf-8",$sms_message)));
     };
 

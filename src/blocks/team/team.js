@@ -13,7 +13,9 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         navSpeed: 2000,
         autoHeight: true,
-        navText: ["Назад","Далее"]
+        navText: ["Назад","Далее"],
+        pullDrag: false,
+        touchDrag: false
     });
 
 });

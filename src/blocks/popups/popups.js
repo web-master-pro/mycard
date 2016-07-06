@@ -43,7 +43,7 @@ $(document).ready(function(){
                     removalDelay: 500,
                     mainClass: 'mfp-zoom-in',
                     overflowY: 'scroll',
-                    fixedContentPos: false
+                    fixedContentPos: true
                 });
             });
             return false;

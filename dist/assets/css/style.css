@@ -967,14 +967,14 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Medium", serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
 
 .about__about strong {
     font-family: "Geometria-ExtraBold", serif;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -985,7 +985,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1043,7 +1043,7 @@ input,
     color: #646567;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1085,7 +1085,7 @@ input,
     color: #646567;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1144,7 +1144,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -1152,7 +1152,7 @@ input,
 .a-slider__text strong {
     text-transform: uppercase;
     font-family: "Geometria-Medium", serif;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -1176,7 +1176,7 @@ input,
     border-bottom: 3px solid #e5e5e5;
     font-family: "Geometria-Bold", serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1188,7 +1188,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -1200,7 +1200,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Bold", serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1221,7 +1221,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Regular", serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1307,7 +1307,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -1346,7 +1346,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1482,7 +1482,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1535,7 +1535,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Medium", serif;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1568,7 +1568,7 @@ input,
     color: #39c;
     font-family: "Geometria-Bold", serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -1603,7 +1603,7 @@ input,
     background-color: #b8dbea;
     font-family: "Geometria-ExtraBold", serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -1625,7 +1625,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1655,7 +1655,7 @@ input,
     color: #2b2e31;
     font-family: "Geometria-Regular", serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -1702,7 +1702,7 @@ input,
     background-color: #b8dbea;
     font-family: "Geometria-ExtraBold", serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -1746,14 +1746,14 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Medium", serif;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
 
 .header-inner__title strong {
     font-family: "Geometria-ExtraBold", serif;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -1764,7 +1764,7 @@ input,
     color: #1b1a1a;
     font-family: "Geometria-Regular", serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -1838,14 +1838,14 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Medium", serif;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.5;
 }
 
 .header__title strong {
     font-family: "Geometria-Heavy", serif;
-    font-weight: 800;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -1870,7 +1870,7 @@ input,
     background-image:         linear-gradient(to top, #3b97d7 0%, #4dc8e2 100%);
     font-family: "Geometria-ExtraBold", serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -1896,7 +1896,7 @@ input,
     color: #8cd9ff;
     font-family: "Geometria-Regular", serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2017,7 +2017,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Bold", serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2028,7 +2028,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2071,7 +2071,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Regular", serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 
@@ -2131,7 +2131,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Medium", serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2269,7 +2269,7 @@ input,
     color: #1b1a1a;
     font-family: "Geometria-Regular", serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
 
     -webkit-align-items: center;
@@ -2299,12 +2299,13 @@ input,
         -ms-flex: 1 1 auto;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link.active {
     text-decoration: none;
     color: #44afdd;
     font-family: "Geometria-Medium", serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -2328,7 +2329,7 @@ input,
     color: #49bcdf;
     font-family: "Geometria-ExtraBold", serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -2339,7 +2340,7 @@ input,
     color: #2b2e31;
     font-family: "Geometria-Regular", serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.5;
 }
@@ -2362,7 +2363,7 @@ input,
     background-image:         linear-gradient(180deg, #8cd9ff 0%, #3fbaf7 100%);
     font-family: "Geometria-Medium", serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2394,7 +2395,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-ExtraBold", serif;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2412,7 +2413,7 @@ input,
     color: #2b2e31;
     font-family: "Geometria-Regular", serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -2459,7 +2460,7 @@ input,
     background-color: #b8dbea;
     font-family: "Geometria-ExtraBold", serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -2494,7 +2495,7 @@ input,
     background: none;
     font-family: "Geometria-Regular", serif;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2502,7 +2503,7 @@ input,
 .form-popup__close-btn span {
     font-family: "Geometria-Bold", serif;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -2581,7 +2582,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -2621,7 +2622,7 @@ input,
     color: #979ca3;
     font-family: "Geometria-Bold", serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 
@@ -2691,7 +2692,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2703,14 +2704,14 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Bold", serif;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
 
 .presentation__text strong {
     font-family: "Geometria-Heavy", serif;
-    font-weight: 800;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -2765,7 +2766,7 @@ input,
     background-image:         linear-gradient(to top, #81bce6 0%, #81bce6 100%);
     font-family: "Geometria-ExtraBold", serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2796,7 +2797,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2853,7 +2854,7 @@ input,
     color: #646567;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2895,7 +2896,7 @@ input,
     color: #646567;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -2955,7 +2956,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -2981,7 +2982,7 @@ input,
     border-bottom: 3px solid #e5e5e5;
     font-family: "Geometria-Bold", serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -3000,7 +3001,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Medium", serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -3015,7 +3016,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 21px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -3045,7 +3046,7 @@ input,
     background-image:         linear-gradient(to top, #81bce6 0%, #81bce6 100%);
     font-family: "Geometria-ExtraBold", serif;
     font-size: 10px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 
@@ -3166,7 +3167,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -3188,7 +3189,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -3250,7 +3251,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -3260,7 +3261,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Regular", serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -3281,7 +3282,7 @@ input,
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -3340,7 +3341,7 @@ input,
     color: #646567;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -3411,7 +3412,7 @@ input,
     color: #3b3b3b;
     font-family: "Geometria-Regular", serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -3419,7 +3420,7 @@ input,
 .t-slider__txt span {
     color: #44afdd;
     font-family: "Geometria-Bold", serif;
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -3436,7 +3437,7 @@ input,
     background-color: #f5f5f5;
     font-family: "Geometria-Regular", serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 30px;
 }
@@ -3517,7 +3518,7 @@ input,
     background-color: #f5f5f5;
     font-family: "Geometria-Regular", serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 }
@@ -3551,7 +3552,7 @@ input,
     color: #979899;
     font-family: "Geometria-Regular", serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -3570,7 +3571,7 @@ label.invalid-field {
     color: #f00;
     font-family: "Geometria-Regular", serif;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }
@@ -3618,7 +3619,7 @@ label.invalid-field.hidden {
     color: #2b2e31;
     font-family: "Geometria-Regular", serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     line-height: 1;
 }

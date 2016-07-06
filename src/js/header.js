@@ -21,7 +21,8 @@
     currentVideoName = backgroundVideos[currentVideoIndex];
     localStorage.setItem("video", currentVideoIndex);
 
-    var showBgVideo = true;
+    var widthWin = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var showBgVideo = (widthWin > 999);
     if (showBgVideo) {
         var bv = new Bideo();
         bv.init({

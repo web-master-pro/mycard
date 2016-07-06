@@ -13,7 +13,9 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         navSpeed: 2000,
         autoHeight: true,
-        navText: ["Цифры","О нас"]
+        navText: ["Цифры","О нас"],
+        pullDrag: false,
+        touchDrag: false
     });
 
     owl.on('changed.owl.carousel', function(event) {
